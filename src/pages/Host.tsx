@@ -62,23 +62,7 @@ const Host = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      quote: "Maximally helped us run a zero-stress hackathon for 500+ students. Our team could actually enjoy the event instead of managing chaos.",
-      author: "TechU University",
-      role: "Director of Computer Science"
-    },
-    {
-      quote: "The students were engaged, the projects were impressive, and we found 3 interns. Huge win.",
-      author: "InnovateCorp",
-      role: "Head of Innovation"
-    },
-    {
-      quote: "Our students loved it. Most had never coded before — but they came out confident and creative. We're hosting again next semester.",
-      author: "CodeClub High School",
-      role: "CS Teacher"
-    }
-  ];
+  
 
   const steps = [
     {
@@ -166,25 +150,7 @@ const Host = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="mb-16">
-        <GlitchHeading 
-          text="💬 What Our Partners Say" 
-          className="text-2xl md:text-3xl mb-8 text-center"
-          color="cyan"
-          level={2}
-        />
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <NeonCard key={index} color="cyan">
-              <p className="text-gray-300 italic mb-4">"{testimonial.quote}"</p>
-              <p className="neon-text-cyan font-semibold">{testimonial.author}</p>
-              <p className="text-gray-400">{testimonial.role}</p>
-            </NeonCard>
-          ))}
-        </div>
-      </section>
+      
 
       {/* How It Works */}
       <section className="mb-16">
