@@ -7,57 +7,57 @@ import NeonCard from '@/components/ui/NeonCard';
 const Students = () => {
   const benefits = [
     {
-      title: 'Learn & Build',
-      description: 'Gain hands-on experience building real projects. Learn new technologies and frameworks with support from mentors.',
+      title: 'Learn by Building',
+      description: 'Gain hands-on experience with real tools, tech, and teammates. Workshops built for beginners and creators who hate fluff. Mentors who\'ve actually built stuff — not just read about it.',
       icon: '💡',
     },
     {
-      title: 'Win Prizes',
-      description: 'Compete for cash prizes, scholarships, internship opportunities, and awesome swag from our sponsors.',
+      title: 'Win Real Prizes',
+      description: 'Cash, tech, scholarships, internships, swag. Sponsor-backed rewards and surprise drops. Recognition that actually matters on college apps and resumes.',
       icon: '🏆',
     },
     {
-      title: 'Networking',
-      description: 'Connect with fellow students, mentors, and industry professionals. Build relationships that last beyond the hackathon.',
+      title: 'Meet Your Future Co-Founders',
+      description: 'Work with students from around the world. Team formation is built in — find your squad, fast. Build connections that last beyond the event.',
       icon: '🤝',
     },
     {
-      title: 'Resume Building',
-      description: 'Add your hackathon projects and achievements to your portfolio and resume to stand out to future employers.',
+      title: 'Boost Your Resume',
+      description: 'Show colleges and companies you don\'t just consume — you create. Every project you build is portfolio gold. Employers love students who hustle and ship.',
       icon: '📄',
     },
     {
-      title: 'Mentorship',
-      description: 'Get guidance from experienced developers, designers, and product managers from leading tech companies.',
+      title: 'Real Mentorship',
+      description: 'Get unstuck instantly with 1:1 help from devs, designers, and founders. Office hours, feedback sessions, and workshops built around you. Ask anything — no judgment, just growth.',
       icon: '👨‍🏫',
     },
     {
-      title: 'Fun Experience',
-      description: 'Enjoy a fun, collaborative atmosphere with activities, games, and entertainment throughout the event.',
+      title: 'Yeah, It\'s Also Just Fun',
+      description: 'Side quests, games, meme battles, live streams. Zero cringe. Maximum energy. Sleep when it\'s over.',
       icon: '🎮',
     }
   ];
 
   const faqs = [
     {
-      question: 'Do I need programming experience to participate?',
-      answer: 'Not at all! Our hackathons welcome participants of all skill levels. We have tracks for beginners and mentors to help you learn as you build.'
+      question: 'Do I need programming experience?',
+      answer: 'Nope. Our events are beginner-friendly with dedicated tracks and mentors to help you learn fast.'
     },
     {
-      question: 'How much does it cost to participate?',
-      answer: 'All Maximally hackathons are completely free for students to participate in. We believe in making tech education and opportunities accessible to everyone.'
+      question: 'How much does it cost?',
+      answer: 'Nothing. Maximally hackathons are 100% free for all students, always.'
     },
     {
-      question: 'Can I participate as an individual, or do I need a team?',
-      answer: 'You can join as an individual or with a team. We have team formation activities at the beginning of each hackathon to help solo participants find teammates.'
+      question: 'Can I join solo?',
+      answer: 'Yes. Come with a team or join solo — we\'ll help you squad up at the start of every event.'
     },
     {
-      question: 'What if I don\'t have an idea for a project?',
-      answer: 'Don\'t worry! Each hackathon includes suggested challenge tracks and prompt ideas. Our mentors can also help you brainstorm project concepts.'
+      question: 'What if I don\'t have an idea?',
+      answer: 'No stress. Every hackathon has challenge prompts and optional tracks to help spark ideas.'
     },
     {
-      question: 'Do I need to stay awake for the entire hackathon?',
-      answer: 'Absolutely not! We encourage participants to get proper rest. While our hackathons run for 24-48 hours, we expect you to take breaks and sleep.'
+      question: 'Do I need to stay up the whole time?',
+      answer: 'Definitely not. Build at your own pace. Sleep is cool. Rested minds build better.'
     }
   ];
 
@@ -66,23 +66,35 @@ const Students = () => {
       {/* Header */}
       <div className="text-center mb-16">
         <GlitchHeading 
-          text="For Students" 
+          text="💥 For Students: Build. Win. Launch." 
           className="text-4xl md:text-5xl mb-4"
         />
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          Hackathons are the perfect opportunity for students to learn new skills, 
-          build amazing projects, win prizes, and connect with other passionate technologists.
+        <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+          Maximally is more than just a hackathon — it's your launchpad.
+          No experience? No team? No idea what you're doing? Perfect.
+          You'll learn fast, build bold, and come out with something real.
         </p>
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <NeonButton href="https://devpost.com/" color="magenta">
+            Join on Devpost
+          </NeonButton>
+          <NeonButton href="https://discord.gg/maximally" color="cyan">
+            Hop into Discord
+          </NeonButton>
+        </div>
       </div>
 
       {/* Benefits */}
       <section className="mb-16">
         <GlitchHeading 
-          text="Why Participate?" 
+          text="🎯 Why Join a Student Hackathon?" 
           className="text-2xl md:text-3xl mb-8 text-center"
           color="cyan"
           level={2}
         />
+        <p className="text-gray-300 text-center mb-8">
+          Forget classroom theory. This is startup speed — packed into one weekend.
+        </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (
@@ -103,23 +115,23 @@ const Students = () => {
       {/* CTA */}
       <section className="mb-16 glowing-container-ultraviolet p-8 text-center">
         <GlitchHeading 
-          text="Ready to Join?" 
+          text="🚀 Ready to Build Something Real?" 
           className="text-2xl md:text-3xl mb-4"
           color="ultraviolet"
           level={2}
         />
         
         <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-          Registration is simple and free. Sign up for our upcoming hackathons on Devpost 
-          and join our Discord community to stay updated on events, team formation, and more.
+          It's 100% free. You don't need to be a coder.
+          All you need is the guts to show up and try.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <NeonButton href="https://devpost.com/" color="ultraviolet">
-            Join on Devpost
+            Register on Devpost
           </NeonButton>
           <NeonButton href="https://discord.gg/maximally" color="magenta">
-            Join Discord
+            Join the Community on Discord
           </NeonButton>
         </div>
       </section>
@@ -127,7 +139,7 @@ const Students = () => {
       {/* FAQs */}
       <section>
         <GlitchHeading 
-          text="Frequently Asked Questions" 
+          text="❓ Student FAQ" 
           className="text-2xl md:text-3xl mb-8 text-center"
           color="magenta"
           level={2}
