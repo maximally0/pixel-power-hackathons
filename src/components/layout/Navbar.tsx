@@ -49,12 +49,12 @@ const Navbar = () => {
           MAXIMALLY
         </Link>
 
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className="text-foreground hover:neon-text transition-all duration-200 tracking-[0.15em] hover:scale-105 text-xs uppercase py-2"
+              className="text-foreground hover:neon-text transition-all duration-200 tracking-[0.15em] hover:scale-105 text-xs uppercase py-2 px-4"
             >
               {item.label}
             </Link>
@@ -88,8 +88,8 @@ const Navbar = () => {
 
       {/* Mobile Menu with Animation */}
       <div className={cn(
-        "md:hidden fixed inset-x-0 top-[64px] bg-black/95 backdrop-blur-md border-b border-neon-magenta/30 transition-all duration-300 overflow-hidden shadow-lg",
-        isOpen ? "max-h-[calc(100vh-64px)] opacity-100" : "max-h-0 opacity-0"
+        "md:hidden fixed inset-x-0 top-[64px] bg-black/95 backdrop-blur-md border-b border-neon-magenta/30 transition-all duration-300 overflow-hidden shadow-lg z-50",
+        isOpen ? "max-h-[calc(100vh-64px)] opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"
       )}>
         <div className="container mx-auto px-4 py-6 space-y-6">
           {navItems.map((item, index) => (
