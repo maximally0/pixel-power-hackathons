@@ -28,15 +28,15 @@ const Contact = () => {
           <div className="space-y-8 px-4">
             <div>
               <p className="text-gray-300 font-semibold mb-2">Email</p>
-              <a href="mailto:info@maximally.tech" className="neon-text-cyan hover:underline break-all">
-                info@maximally.tech
+              <a href="mailto:hello@maximally.in" className="neon-text-cyan hover:underline break-all">
+                hello@maximally.in
               </a>
             </div>
 
             <div>
               <p className="text-gray-300 font-semibold mb-2">Discord</p>
-              <a href="https://discord.gg/maximally" target="_blank" rel="noopener noreferrer" className="neon-text-ultraviolet hover:underline break-all">
-                discord.gg/maximally
+              <a href="https://discord.gg/S2YyGtBWKa" target="_blank" rel="noopener noreferrer" className="neon-text-ultraviolet hover:underline break-all">
+                discord.gg/S2YyGtBWKa
               </a>
             </div>
 
@@ -53,7 +53,7 @@ const Contact = () => {
               For urgent inquiries, please reach out to us on Discord for the fastest response.
             </p>
 
-            <NeonButton href="https://discord.gg/maximally" color="ultraviolet" className="w-full">
+            <NeonButton href="https://discord.gg/S2YyGtBWKa" color="ultraviolet" className="w-full">
               Join Discord
             </NeonButton>
           </div>

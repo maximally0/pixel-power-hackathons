@@ -78,7 +78,7 @@ const Students = () => {
           <NeonButton href="https://devpost.com/" color="magenta">
             Join on Devpost
           </NeonButton>
-          <NeonButton href="https://discord.gg/maximally" color="cyan">
+          <NeonButton href="https://discord.gg/S2YyGtBWKa" color="cyan">
             Hop into Discord
           </NeonButton>
         </div>

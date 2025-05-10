@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GlitchHeading from '@/components/ui/GlitchHeading';
 import HackathonCard from '@/components/ui/HackathonCard';
@@ -13,10 +12,10 @@ const Hackathons = () => {
       date: 'March 15-17, 2025',
       description: 'Create, innovate, and build the next big thing. Join us for an exciting hackathon experience where creativity meets technology.',
       devpostLink: 'https://devpost.com/',
-      discordLink: 'https://discord.gg/maximally',
+      discordLink: 'https://discord.gg/S2YyGtBWKa',
     }
   ];
-  
+
   const pastHackathons = [
     {
       id: 2,
@@ -24,7 +23,7 @@ const Hackathons = () => {
       date: 'January 20-22, 2025',
       description: 'The latest in our series of CodeQuest hackathons. Where coding meets adventure.',
       devpostLink: 'https://devpost.com/',
-      discordLink: 'https://discord.gg/maximally',
+      discordLink: 'https://discord.gg/S2YyGtBWKa',
     },
     {
       id: 3,
@@ -32,7 +31,7 @@ const Hackathons = () => {
       date: 'December 1-3, 2024',
       description: 'Part of our renowned HackSkye series. Innovation and creativity at its peak.',
       devpostLink: 'https://devpost.com/',
-      discordLink: 'https://discord.gg/maximally',
+      discordLink: 'https://discord.gg/S2YyGtBWKa',
     },
     {
       id: 4,
@@ -40,7 +39,7 @@ const Hackathons = () => {
       date: 'November 10-12, 2024',
       description: 'The second installment of our CodeQuest series. Breaking barriers in code.',
       devpostLink: 'https://devpost.com/',
-      discordLink: 'https://discord.gg/maximally',
+      discordLink: 'https://discord.gg/S2YyGtBWKa',
     }
   ];
 
@@ -58,7 +57,7 @@ const Hackathons = () => {
           Whether you're here to launch your first product or test your boldest idea, this is your stage.
         </p>
       </div>
-      
+
       {/* Upcoming Hackathons */}
       <section className="mb-16">
         <GlitchHeading 
@@ -71,7 +70,7 @@ const Hackathons = () => {
           Each Maximally event is themed, fast-paced, and powered by real prizes, mentors, and momentum.
           Ready to build something real?
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {upcomingHackathons.map((hackathon) => (
             <HackathonCard
@@ -85,7 +84,7 @@ const Hackathons = () => {
           ))}
         </div>
       </section>
-      
+
       {/* Past Hackathons */}
       <section className="mb-16">
         <GlitchHeading 
@@ -98,7 +97,7 @@ const Hackathons = () => {
           Browse past battles, standout builds, and the ideas that left a mark.
           We'll be adding full archives soon — for now, here's a look back at some of our recent favorites.
         </p>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {pastHackathons.map((hackathon) => (
             <HackathonCard
@@ -122,7 +121,7 @@ const Hackathons = () => {
           color="ultraviolet"
           level={2}
         />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <NeonCard color="magenta">
             <ul className="space-y-4 text-gray-300">
@@ -159,7 +158,7 @@ const Hackathons = () => {
             <NeonButton to="/hackathons" color="magenta">
               See All Upcoming Hackathons
             </NeonButton>
-            <NeonButton href="https://discord.gg/maximally" color="cyan">
+            <NeonButton href="https://discord.gg/S2YyGtBWKa" color="cyan">
               Join the Community on Discord
             </NeonButton>
           </div>
