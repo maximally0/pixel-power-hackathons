@@ -28,10 +28,11 @@ const Sponsors = () => {
     }
   ];
 
-  const sponsorshipTiers = [
+  const companyTiers = [
     {
       name: 'PLATINUM',
       color: 'cyan',
+      price: '$500',
       features: [
         'Featured placement on all event materials',
         'Dedicated workshop/presentation slot',
@@ -45,6 +46,7 @@ const Sponsors = () => {
     {
       name: 'GOLD',
       color: 'magenta',
+      price: '$200',
       features: [
         'Premium logo placement',
         'Workshop opportunity',
@@ -57,6 +59,7 @@ const Sponsors = () => {
     {
       name: 'SILVER',
       color: 'ultraviolet',
+      price: '$100',
       features: [
         'Logo on event materials',
         'Mentorship opportunities',
@@ -67,18 +70,40 @@ const Sponsors = () => {
     }
   ];
 
-  const judgeInfo = [
-    'Review and evaluate hackathon projects',
-    'Provide valuable feedback to participants',
-    'Network with sponsor companies and other judges',
-    'Help identify promising talent and projects',
-    'Flexible time commitment (typically 3-5 hours)',
-    'Remote judging options available'
+  const individualTiers = [
+    {
+      name: 'SUPPORTER PLUS',
+      color: 'magenta',
+      price: '$100',
+      features: [
+        'Name recognition on event materials',
+        'Exclusive mentor badge',
+        'Early access to hackathon projects',
+        'Invitation to VIP networking events'
+      ]
+    },
+    {
+      name: 'SUPPORTER',
+      color: 'cyan',
+      price: '$50',
+      features: [
+        'Name recognition on event materials',
+        'Mentor badge',
+        'Access to hackathon projects'
+      ]
+    }
+  ];
+
+  const currentSponsors = [
+    'Felafex',
+    'CodeDay',
+    'CodeCrafters',
+    'AzebThemes',
+    'AWS'
   ];
 
   return (
     <div className="container mx-auto px-4 py-16">
-      {/* Header */}
       <div className="text-center mb-16">
         <GlitchHeading 
           text="Sponsors & Judges" 
@@ -90,7 +115,6 @@ const Sponsors = () => {
         </p>
       </div>
 
-      {/* Sponsor Benefits */}
       <section className="mb-16">
         <GlitchHeading 
           text="Why Sponsor?" 
@@ -115,25 +139,27 @@ const Sponsors = () => {
         </div>
       </section>
 
-      {/* Sponsorship Tiers */}
       <section className="mb-16">
         <GlitchHeading 
-          text="Sponsorship Packages" 
+          text="Company Sponsorship Tiers" 
           className="text-2xl md:text-3xl mb-8 text-center"
           color="magenta"
           level={2}
         />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {sponsorshipTiers.map((tier, index) => (
+          {companyTiers.map((tier, index) => (
             <NeonCard 
               key={index}
               color={tier.color as 'magenta' | 'cyan' | 'ultraviolet'}
               className="flex flex-col h-full"
             >
-              <h3 className={`text-2xl mb-6 text-center ${tier.color === 'magenta' ? 'neon-text' : tier.color === 'cyan' ? 'neon-text-cyan' : 'neon-text-ultraviolet'}`}>
+              <h3 className={`text-2xl mb-2 text-center ${tier.color === 'magenta' ? 'neon-text' : tier.color === 'cyan' ? 'neon-text-cyan' : 'neon-text-ultraviolet'}`}>
                 {tier.name}
               </h3>
+              <p className={`text-xl mb-6 text-center ${tier.color === 'magenta' ? 'neon-text' : tier.color === 'cyan' ? 'neon-text-cyan' : 'neon-text-ultraviolet'}`}>
+                {tier.price}
+              </p>
               
               <ul className="mb-8 space-y-3 flex-grow">
                 {tier.features.map((feature, featureIndex) => (
@@ -156,61 +182,61 @@ const Sponsors = () => {
         </div>
       </section>
 
-      {/* Judges Section */}
-      <section className="mb-16 glowing-container-ultraviolet p-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <GlitchHeading 
-              text="Become a Judge" 
-              className="text-2xl md:text-3xl mb-4"
-              color="ultraviolet"
-              level={2}
-            />
-            
-            <p className="text-gray-300 mb-6">
-              Industry professionals are invited to serve as judges for our hackathons. 
-              This is an excellent opportunity to give back to the tech community, 
-              discover emerging talent, and see cutting-edge projects.
-            </p>
-            
-            <ul className="space-y-2 mb-6">
-              {judgeInfo.map((item, index) => (
-                <li key={index} className="flex items-center text-gray-300">
-                  <span className="inline-block w-3 h-3 bg-neon-ultraviolet mr-3"></span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            
-            <NeonButton to="/contact" color="ultraviolet">
-              Apply as Judge
-            </NeonButton>
-          </div>
-          
-          <div className="hidden md:block">
-            <img src="/placeholder.svg" alt="Judge" className="w-full h-auto neon-border-ultraviolet" />
-          </div>
+      <section className="mb-16">
+        <GlitchHeading 
+          text="Individual Sponsorship Tiers" 
+          className="text-2xl md:text-3xl mb-8 text-center"
+          color="ultraviolet"
+          level={2}
+        />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {individualTiers.map((tier, index) => (
+            <NeonCard 
+              key={index}
+              color={tier.color as 'magenta' | 'cyan'}
+              className="flex flex-col h-full"
+            >
+              <h3 className={`text-2xl mb-2 text-center ${tier.color === 'magenta' ? 'neon-text' : 'neon-text-cyan'}`}>
+                {tier.name}
+              </h3>
+              <p className={`text-xl mb-6 text-center ${tier.color === 'magenta' ? 'neon-text' : 'neon-text-cyan'}`}>
+                {tier.price}
+              </p>
+              
+              <ul className="mb-8 space-y-3 flex-grow">
+                {tier.features.map((feature, featureIndex) => (
+                  <li key={featureIndex} className="flex items-start text-gray-300">
+                    <span className={`inline-block w-3 h-3 ${tier.color === 'magenta' ? 'bg-neon-magenta' : 'bg-neon-cyan'} mr-3 mt-1.5`}></span>
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              
+              <NeonButton 
+                to="/contact" 
+                color={tier.color as 'magenta' | 'cyan'} 
+                className="mt-auto"
+              >
+                Become a Supporter
+              </NeonButton>
+            </NeonCard>
+          ))}
         </div>
       </section>
 
-      {/* Past Sponsors */}
       <section className="text-center">
         <GlitchHeading 
-          text="Past Partners" 
+          text="Current Sponsors" 
           className="text-2xl md:text-3xl mb-8"
           color="cyan"
           level={2}
         />
         
-        <p className="text-gray-300 mb-10 max-w-2xl mx-auto">
-          We've had the pleasure of partnering with innovative companies and organizations 
-          who share our mission of empowering student hackers.
-        </p>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-          {[...Array(6)].map((_, index) => (
-            <div key={index} className="w-32 h-32 flex items-center justify-center glowing-container">
-              <span className="text-xl text-gray-400">Logo {index + 1}</span>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+          {currentSponsors.map((sponsor, index) => (
+            <div key={index} className="text-xl text-gray-300 font-pixel">
+              {sponsor}
             </div>
           ))}
         </div>
