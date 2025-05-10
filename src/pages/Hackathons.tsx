@@ -9,55 +9,39 @@ const Hackathons = () => {
   const upcomingHackathons = [
     {
       id: 1,
-      title: 'CyberGrid Hackathon 2025',
-      date: 'August 15-17, 2025',
-      description: 'Build something unbreakable. This is our flagship challenge focused on cybersecurity, AI, and digital trust. $10,000 in prizes. Mentors from top tech companies. You vs. the grid.',
+      title: 'Maximally Makeathon',
+      date: 'March 15-17, 2025',
+      description: 'Create, innovate, and build the next big thing. Join us for an exciting hackathon experience where creativity meets technology.',
       devpostLink: 'https://devpost.com/',
       discordLink: 'https://discord.gg/maximally',
-    },
+    }
+  ];
+  
+  const pastHackathons = [
     {
       id: 2,
-      title: 'EdTech Innovation Challenge',
-      date: 'June 5-7, 2025',
-      description: 'Rebuild the classroom from scratch. Design the future of learning with tools that engage, empower, and educate. Backed by leading EdTech brands.',
+      title: 'CodeQuest \'25',
+      date: 'January 20-22, 2025',
+      description: 'The latest in our series of CodeQuest hackathons. Where coding meets adventure.',
       devpostLink: 'https://devpost.com/',
       discordLink: 'https://discord.gg/maximally',
     },
     {
       id: 3,
-      title: 'Climate Hack 2025',
-      date: 'September 20-22, 2025',
-      description: 'Your code vs. climate change. Build tech that tackles environmental challenges — and helps shape a more sustainable world.',
+      title: 'HackSkye Series III',
+      date: 'December 1-3, 2024',
+      description: 'Part of our renowned HackSkye series. Innovation and creativity at its peak.',
       devpostLink: 'https://devpost.com/',
       discordLink: 'https://discord.gg/maximally',
     },
-  ];
-  
-  const pastHackathons = [
     {
       id: 4,
-      title: 'Game Dev Jam 2024',
+      title: 'CodeQuest Series II',
       date: 'November 10-12, 2024',
-      description: 'Create wild, playable worlds with new mechanics and real storytelling.',
+      description: 'The second installment of our CodeQuest series. Breaking barriers in code.',
       devpostLink: 'https://devpost.com/',
       discordLink: 'https://discord.gg/maximally',
-    },
-    {
-      id: 5,
-      title: 'HealthTech Hackathon',
-      date: 'September 8-10, 2024',
-      description: 'Build projects that make healthcare smarter, faster, and more human.',
-      devpostLink: 'https://devpost.com/',
-      discordLink: 'https://discord.gg/maximally',
-    },
-    {
-      id: 6,
-      title: 'Fintech Innovation Cup',
-      date: 'July 15-17, 2024',
-      description: 'Hack the future of finance. Payments, banking, crypto, equity — your vision, your build.',
-      devpostLink: 'https://devpost.com/',
-      discordLink: 'https://discord.gg/maximally',
-    },
+    }
   ];
 
   return (
