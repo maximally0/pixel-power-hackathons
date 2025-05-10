@@ -24,7 +24,7 @@ const Home = () => {
             <NeonButton to="/host" color="cyan">
               Host Your Own
             </NeonButton>
-            <NeonButton href="https://discord.gg/maximally" color="ultraviolet">
+            <NeonButton href="https://discord.gg/S2YyGtBWKa" color="ultraviolet">
               Join Discord
             </NeonButton>
           </div>
@@ -160,7 +160,7 @@ const Home = () => {
               <NeonButton to="/host" color="magenta">
                 Host Your Own
               </NeonButton>
-              <NeonButton href="https://discord.gg/maximally" color="ultraviolet">
+              <NeonButton href="https://discord.gg/S2YyGtBWKa" color="ultraviolet">
                 Join Community
               </NeonButton>
             </div>
