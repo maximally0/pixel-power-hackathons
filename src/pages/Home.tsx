@@ -5,6 +5,34 @@ import NeonButton from '@/components/ui/NeonButton';
 import NeonCard from '@/components/ui/NeonCard';
 
 const Home = () => {
+  const stats = [
+    { number: "50+", label: "Hackathons Hosted" },
+    { number: "10K+", label: "Global Participants" },
+    { number: "$100K+", label: "in Prizes Awarded" },
+    { number: "25+", label: "Partner Companies" }
+  ];
+
+  const featuredHackathons = [
+    {
+      title: "CyberGrid 2025",
+      date: "Mar 15-17",
+      prize: "$10,000",
+      color: "magenta"
+    },
+    {
+      title: "AI Innovation",
+      date: "Apr 1-3",
+      prize: "$5,000",
+      color: "cyan"
+    },
+    {
+      title: "GameDev Pro",
+      date: "May 20-22",
+      prize: "$7,500",
+      color: "ultraviolet"
+    }
+  ];
+
   return (
     <div>
       {/* Hero Section */}
@@ -28,6 +56,47 @@ const Home = () => {
             </NeonButton>
           </div>
         </NeonCard>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            {stats.map((stat, index) => (
+              <NeonCard key={index} color={index % 2 === 0 ? 'magenta' : 'cyan'} className="text-center py-6">
+                <h3 className="text-2xl md:text-3xl mb-2 neon-text animate-pulse">{stat.number}</h3>
+                <p className="text-sm md:text-base text-gray-300">{stat.label}</p>
+              </NeonCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Hackathons */}
+      <section className="py-16 px-4 bg-black/30">
+        <div className="container mx-auto">
+          <GlitchHeading 
+            text="Upcoming Hackathons" 
+            className="text-2xl md:text-3xl mb-8 text-center"
+            color="ultraviolet"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {featuredHackathons.map((hackathon, index) => (
+              <NeonCard key={index} color={hackathon.color as any} className="transform hover:scale-105 transition-transform">
+                <div className="p-6">
+                  <h3 className={`text-xl mb-4 neon-text-${hackathon.color}`}>{hackathon.title}</h3>
+                  <div className="flex justify-between text-sm mb-4">
+                    <span className="text-gray-300">{hackathon.date}</span>
+                    <span className={`neon-text-${hackathon.color}`}>{hackathon.prize}</span>
+                  </div>
+                  <NeonButton to="/hackathons" color={hackathon.color as any} className="w-full">
+                    Learn More
+                  </NeonButton>
+                </div>
+              </NeonCard>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* About Section */}
