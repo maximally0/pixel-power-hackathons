@@ -23,17 +23,11 @@ const HackathonCard: React.FC<HackathonCardProps> = ({
   image,
   past = false
 }) => {
-  const bgImage = image || '/placeholder.svg';
-  
   return (
     <NeonCard 
       color={past ? 'cyan' : 'magenta'} 
       className="h-full flex flex-col"
     >
-      <div 
-        className="h-40 bg-cover bg-center mb-4"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      />
       
       <h3 className={`text-xl mb-2 ${past ? 'neon-text-cyan' : 'neon-text'}`}>
         {title}
