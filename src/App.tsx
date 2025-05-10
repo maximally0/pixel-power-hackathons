@@ -12,6 +12,10 @@ import Host from "./pages/Host";
 import Sponsors from "./pages/Sponsors";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import SubmissionGuidelines from "./pages/SubmissionGuidelines";
+import DiscordGuidelines from "./pages/DiscordGuidelines";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Commitment from "./pages/Commitment";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +33,10 @@ const App = () => (
             <Route path="/host" element={<Host />} />
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/submission-guidelines" element={<SubmissionGuidelines />} />
+            <Route path="/discord-guidelines" element={<DiscordGuidelines />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/our-commitment" element={<Commitment />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

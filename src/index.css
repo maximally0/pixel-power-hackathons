@@ -45,7 +45,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-pixel font-bold text-base;
+    @apply bg-background text-foreground font-pixel font-bold text-sm;
     background-color: #0d0d0d;
     background-image: 
       linear-gradient(rgba(255, 0, 255, 0.05) 1px, transparent 1px),

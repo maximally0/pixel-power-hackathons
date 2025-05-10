@@ -3,78 +3,90 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-black/40 border-t border-neon-magenta/30 py-12 mt-16">
+    <footer className="bg-background/90 backdrop-blur-md border-t border-neon-magenta/30 py-8 mt-12">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl mb-4 neon-text-cyan">MAXIMALLY</h3>
-            <p className="text-gray-300">
-              Where we run multiple student-focused online hackathons every year and offer 
-              "Hackathon-as-a-Service" to schools, clubs, and companies.
+            <h3 className="text-md font-pixel mb-4 neon-text">MAXIMALLY</h3>
+            <p className="text-sm text-gray-300 mb-4">
+              Where we run multiple student-focused online hackathons every year and 
+              offer 'Hackathon-as-a-Service' to schools, clubs, and companies.
             </p>
+            <div className="flex space-x-4">
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-magenta">
+                Twitter
+              </a>
+              <a href="https://discord.gg" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan">
+                Discord
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-ultraviolet">
+                GitHub
+              </a>
+            </div>
           </div>
           
           <div>
-            <h3 className="text-xl mb-4 neon-text-ultraviolet">LINKS</h3>
-            <ul className="space-y-2">
+            <h3 className="text-md font-pixel mb-4 neon-text-cyan">LINKS</h3>
+            <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/" className="text-gray-300 hover:neon-text transition-all">HOME</Link>
+                <Link to="/hackathons" className="text-gray-400 hover:text-neon-cyan">
+                  Hackathons
+                </Link>
               </li>
               <li>
-                <Link to="/hackathons" className="text-gray-300 hover:neon-text transition-all">HACKATHONS</Link>
+                <Link to="/students" className="text-gray-400 hover:text-neon-cyan">
+                  For Students
+                </Link>
               </li>
               <li>
-                <Link to="/students" className="text-gray-300 hover:neon-text transition-all">FOR STUDENTS</Link>
+                <Link to="/host" className="text-gray-400 hover:text-neon-cyan">
+                  Host a Hackathon
+                </Link>
               </li>
               <li>
-                <Link to="/host" className="text-gray-300 hover:neon-text transition-all">HOST A HACKATHON</Link>
+                <Link to="/sponsors" className="text-gray-400 hover:text-neon-cyan">
+                  Sponsors
+                </Link>
               </li>
               <li>
-                <Link to="/sponsors" className="text-gray-300 hover:neon-text transition-all">SPONSORS & JUDGES</Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:neon-text transition-all">CONTACT</Link>
+                <Link to="/contact" className="text-gray-400 hover:text-neon-cyan">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl mb-4 neon-text">CONNECT</h3>
-            <div className="space-y-2">
-              <a 
-                href="https://discord.gg/maximally" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-gray-300 hover:neon-text-ultraviolet transition-all"
-              >
-                DISCORD
-              </a>
-              <a 
-                href="https://devpost.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-gray-300 hover:neon-text-cyan transition-all"
-              >
-                DEVPOST
-              </a>
-              <a 
-                href="https://github.com/maximally" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block text-gray-300 hover:neon-text transition-all"
-              >
-                GITHUB
-              </a>
-            </div>
+            <h3 className="text-md font-pixel mb-4 neon-text-ultraviolet">POLICIES</h3>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link to="/submission-guidelines" className="text-gray-400 hover:text-neon-ultraviolet">
+                  Submission Guidelines
+                </Link>
+              </li>
+              <li>
+                <Link to="/discord-guidelines" className="text-gray-400 hover:text-neon-ultraviolet">
+                  Discord Guidelines
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy-policy" className="text-gray-400 hover:text-neon-ultraviolet">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/our-commitment" className="text-gray-400 hover:text-neon-ultraviolet">
+                  Our Commitment
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
         
-        <div className="border-t border-neon-magenta/20 mt-8 pt-6 text-center">
-          <p className="text-gray-400">
-            &copy; {currentYear} MAXIMALLY. ALL RIGHTS RESERVED.
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center">
+          <p className="text-xs text-gray-500">
+            © {new Date().getFullYear()} Maximally. All rights reserved.
           </p>
         </div>
       </div>
