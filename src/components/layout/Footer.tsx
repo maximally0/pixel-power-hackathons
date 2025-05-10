@@ -13,17 +13,6 @@ const Footer = () => {
               Where we run multiple student-focused online hackathons every year and 
               offer 'Hackathon-as-a-Service' to schools, clubs, and companies.
             </p>
-            <div className="flex space-x-4">
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-magenta">
-                Twitter
-              </a>
-              <a href="https://discord.gg/S2YyGtBWKa" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-cyan">
-                Discord
-              </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-neon-ultraviolet">
-                GitHub
-              </a>
-            </div>
           </div>
           
           <div>
