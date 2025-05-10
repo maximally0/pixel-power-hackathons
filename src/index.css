@@ -57,7 +57,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply uppercase tracking-wider font-bold;
+    @apply uppercase tracking-wider font-bold font-pixel;
   }
 
   ::selection {
@@ -147,4 +147,5 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Press Start 2P', monospace;
 }

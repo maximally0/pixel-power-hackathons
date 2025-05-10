@@ -65,7 +65,7 @@ export default {
 				sm: '0.25rem'
 			},
 			fontFamily: {
-				pixel: ['Press Start 2P', 'VT323', 'monospace'],
+				pixel: ['"Press Start 2P"', 'VT323', 'monospace'],
 			},
 			keyframes: {
 				'accordion-down': {
