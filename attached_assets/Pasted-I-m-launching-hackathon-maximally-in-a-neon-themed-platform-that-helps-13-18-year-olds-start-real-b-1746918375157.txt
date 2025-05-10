@@ -1,0 +1,75 @@
+I'm launching hackathon.maximally.in, a neon-themed platform that helps 13–18-year-olds start real businesses through student hackathons and startup bootcamps. It offers:
+
+Hackathon-as-a-Service for schools/youth orgs
+
+Startup bootcamps
+
+Sponsorship and hosting tools
+
+The visual style is retro-futuristic (black background, neon accents, pixel/glitch design). The brand is bold, energetic, inspiring—but still sharp and professional.
+
+I need a complete SEO setup to get this site ranking, including all technical, structural, and content-related best practices. Please provide:
+
+✅ 1. Technical SEO Setup
+robots.txt configuration
+
+XML sitemap setup
+
+Canonical tag implementation
+
+URL structure suggestions (clean, SEO-friendly)
+
+Site speed best practices (lazy loading, CDN, compression, etc.)
+
+Mobile responsiveness checks
+
+Core Web Vitals optimization
+
+HTTPS / SSL enforcement
+
+Schema markup (Organization, Events, FAQ, etc.)
+
+🗂️ 2. Site Architecture & Pages
+Homepage (value prop, CTAs for joining/hosting)
+
+Hackathon-as-a-Service page
+
+Bootcamps page
+
+Sponsor info page
+
+Case studies/success stories
+
+Blog for content marketing + SEO
+
+City/school-specific landing pages if useful (e.g. /hackathon-in-mumbai)
+
+🔍 3. Keyword Strategy
+High-volume keywords for student hackathons, teen entrepreneurship, etc.
+
+Long-tail keywords like “how to host a hackathon for high school”, “startup bootcamp for teenagers”
+
+Keyword mapping to site pages
+
+🏗️ 4. On-Page SEO
+Title tags, meta descriptions, and H1-H3 recommendations
+
+Internal linking strategy
+
+Image optimization (alt tags, filenames)
+
+🧱 5. Content Plan
+Blog post ideas (educational, inspirational, event recaps)
+
+Evergreen content suggestions (e.g. “Ultimate Guide to Hosting a School Hackathon”)
+
+Content clusters around key search topics
+
+🔗 6. Authority Building
+Backlink outreach suggestions (schools, STEM blogs, youth orgs)
+
+Directory or partnership opportunities
+
+Press release strategy (e.g., every major hackathon or sponsorship deal)
+
+Assume this is being built from scratch on a fast, modern stack (Next.js or similar), and we want to launch with solid foundations.
