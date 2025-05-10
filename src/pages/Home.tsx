@@ -93,24 +93,24 @@ const Home = () => {
         <div className="container mx-auto">
           <NeonCard color="ultraviolet" className="mb-12">
             <GlitchHeading 
-              text="CyberGrid 2025"
+              text="Maximally Makeathon 2025"
               className="text-3xl md:text-4xl mb-6 text-center"
               color="ultraviolet"
             />
             <h3 className="text-2xl mb-6 text-center neon-text-ultraviolet">
-              The Ultimate Student Startup Showdown
+              The Ultimate Student Startup Experience
             </h3>
 
             <div className="text-center mb-8">
               <p className="text-gray-300 mb-6">
                 Join hundreds of student founders for 48 hours of pure creativity, chaos, and code.
-                CyberGrid is our flagship online startup hackathon — open globally to all high school students.
+                Maximally Makeathon is our flagship startup hackathon — open globally to all high school students.
               </p>
 
               <ul className="space-y-4 max-w-lg mx-auto mb-8">
                 <li className="flex items-center justify-center">
                   <span className="w-2 h-2 bg-neon-ultraviolet rounded-full mr-3"></span>
-                  <span>Date: August 15–17, 2025</span>
+                  <span>Date: July 1-3, 2025</span>
                 </li>
                 <li className="flex items-center justify-center">
                   <span className="w-2 h-2 bg-neon-ultraviolet rounded-full mr-3"></span>
@@ -127,10 +127,10 @@ const Home = () => {
               </ul>
 
               <div className="flex flex-col sm:flex-row justify-center gap-6">
-                <NeonButton href="https://devpost.com/" color="ultraviolet">
+                <NeonButton href="https://maximally-makeathon-2025.devpost.com/" color="ultraviolet">
                   Register on Devpost
                 </NeonButton>
-                <NeonButton href="https://discord.gg/maximally" color="magenta">
+                <NeonButton href="https://discord.gg/S2YyGtBWKa" color="magenta">
                   Join Discord
                 </NeonButton>
               </div>
