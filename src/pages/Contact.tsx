@@ -49,7 +49,7 @@ const Contact = () => {
           text="Contact Us" 
           className="text-4xl md:text-5xl mb-4"
         />
-        <p className="text-gray-300 max-w-2xl mx-auto">
+        <p className="text-gray-300 max-w-2xl mx-auto px-4 text-sm md:text-base">
           Have questions about our hackathons or services? Want to become a sponsor 
           or judge? Reach out to us and we'll get back to you soon.
         </p>

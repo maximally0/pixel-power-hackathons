@@ -10,10 +10,10 @@ const Home = () => {
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center text-center px-4">
         <NeonCard color="magenta" className="max-w-4xl w-full py-12 px-8">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 neon-text animate-flicker">
+          <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-6 neon-text animate-flicker px-4">
             ENTER THE GRID
           </h1>
-          <p className="text-base md:text-lg mb-12 max-w-3xl mx-auto floating">
+          <p className="text-sm md:text-base lg:text-lg mb-12 max-w-3xl mx-auto floating px-4">
             Host and join epic online hackathons. For students, schools, and companies.
           </p>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -44,7 +44,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <NeonCard color="magenta">
               <h3 className="text-lg mb-4 neon-text">Student Focused</h3>
-              <p className="text-sm text-gray-300 floating">
+              <p className="text-xs md:text-sm text-gray-300 floating">
                 Student-focused hackathons with mentors and workshops to boost your skills.
               </p>
             </NeonCard>

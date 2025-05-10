@@ -37,6 +37,24 @@
   font-size: 0.6rem;
 }
 
+.text-container {
+  @apply px-4 mx-auto max-w-full overflow-hidden text-ellipsis;
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+  
+  .text-base {
+    font-size: 0.875rem;
+  }
+  
+  .text-lg {
+    font-size: 1rem;
+  }
+}
+
 .nav-item-spacing {
   letter-spacing: 0.15em;
   padding-top: 0.5rem;
