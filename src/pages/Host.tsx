@@ -7,111 +7,181 @@ import NeonCard from '@/components/ui/NeonCard';
 const Host = () => {
   const features = [
     {
-      title: 'Custom Branding',
-      description: 'Fully branded event with your organization\'s logo, colors, and messaging throughout the platform and communications.',
+      icon: "🎨",
+      title: "Custom Branding",
+      points: [
+        "Your logo, colors, and messaging throughout the platform",
+        "Fully branded email and Discord communications",
+        "Polished event visuals to match your vibe"
+      ]
     },
     {
-      title: 'Registration & Participant Management',
-      description: 'Complete registration system with participant tracking, team formation, and communication tools.',
+      icon: "📋",
+      title: "Registration & Team Management",
+      points: [
+        "Participant signups, team formation tools, and live dashboards",
+        "Real-time communication and announcements",
+        "GDPR-compliant and built for student safety"
+      ]
     },
     {
-      title: 'Discord Community Setup',
-      description: 'Custom Discord server setup with channels for announcements, team formation, mentorship, and more.',
+      icon: "💬",
+      title: "Discord Community Setup",
+      points: [
+        "Custom server setup with structured channels",
+        "Automated roles, announcements, and onboarding",
+        "Integrated mentor and help-desk support"
+      ]
     },
     {
-      title: 'Judging Platform',
-      description: 'Comprehensive judging system with customizable criteria, judge assignment, and scoring tools.',
+      icon: "🧠",
+      title: "Workshops & Mentorship",
+      points: [
+        "Access to our mentor network of engineers, founders, and designers",
+        "Curated beginner-friendly workshops based on your theme",
+        "Live Q&A, office hours, and feedback sessions"
+      ]
     },
     {
-      title: 'Sponsor Management',
-      description: 'Tools for managing sponsor relationships, including logo placement, prize distribution, and mentor coordination.',
+      icon: "🧑‍⚖️",
+      title: "Judging & Submissions Platform",
+      points: [
+        "Custom challenge tracks and judging criteria",
+        "Easy-to-use project submission and review system",
+        "Judge assignment, scorecards, and auto-tallied results"
+      ]
     },
     {
-      title: 'Workshops & Mentorship',
-      description: 'Organization of technical workshops and mentorship sessions with industry experts.',
-    },
-    {
-      title: 'Prize Distribution',
-      description: 'Handling of prize distribution to winners, including cash prizes, swag, and special awards.',
-    },
-    {
-      title: 'Post-Event Analytics',
-      description: 'Detailed analytics and reports on participation, engagement, project quality, and overall event success.',
+      icon: "💰",
+      title: "Sponsor & Prize Management",
+      points: [
+        "Sponsor visibility: logos, shoutouts, challenge tracks",
+        "Prize logistics, swag shipping, and winner payout",
+        "Optional sponsor-mentor matching"
+      ]
     }
   ];
 
-  const clients = [
+  const testimonials = [
     {
-      name: 'TechU University',
-      quote: 'Working with Maximally allowed us to run a successful hackathon with minimal effort from our staff. Their platform and support made the entire process smooth and engaging for our students.',
-      role: 'Director of Computer Science'
+      quote: "Maximally helped us run a zero-stress hackathon for 500+ students. Our team could actually enjoy the event instead of managing chaos.",
+      author: "TechU University",
+      role: "Director of Computer Science"
     },
     {
-      name: 'InnovateCorp',
-      quote: 'Maximally helped us connect with talented students through our sponsored hackathon. The quality of projects and engagement exceeded our expectations.',
-      role: 'Head of Innovation'
+      quote: "The students were engaged, the projects were impressive, and we found 3 interns. Huge win.",
+      author: "InnovateCorp",
+      role: "Head of Innovation"
     },
     {
-      name: 'CodeClub High School',
-      quote: 'Our students had an incredible experience at our Maximally-powered hackathon. Many of them had never coded before, but the supportive environment helped them create amazing projects.',
-      role: 'Computer Science Teacher'
+      quote: "Our students loved it. Most had never coded before — but they came out confident and creative. We're hosting again next semester.",
+      author: "CodeClub High School",
+      role: "CS Teacher"
     }
+  ];
+
+  const steps = [
+    {
+      title: "Discovery Call",
+      description: "We align on your audience, goals, and budget."
+    },
+    {
+      title: "Platform Setup",
+      description: "We build and brand your hackathon experience."
+    },
+    {
+      title: "Launch & Execution",
+      description: "We handle tech, support, mentors, and live ops."
+    },
+    {
+      title: "Reporting & Follow-Up",
+      description: "You get post-event insights, summaries, and highlights."
+    }
+  ];
+
+  const perfectFor = [
+    "Colleges and universities hosting tech events",
+    "High school coding clubs and STEM programs",
+    "Companies looking to reach Gen Z talent",
+    "Developer communities growing their ecosystem",
+    "Nonprofits driving access to tech education"
   ];
 
   return (
     <div className="container mx-auto px-4 py-16">
-      {/* Header */}
+      {/* Hero Section */}
       <div className="text-center mb-16">
         <GlitchHeading 
-          text="Host a Hackathon" 
+          text="🚀 Host a Hackathon with Maximally" 
           className="text-4xl md:text-5xl mb-4"
         />
-        <p className="text-gray-300 max-w-2xl mx-auto">
-          Our Hackathon-as-a-Service offering makes it easy for schools, clubs, and 
-          companies to run their own customized hackathon events with professional support.
+        <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+          Run a world-class student hackathon — without the headache.
+          We handle everything: branding, registration, logistics, mentorship, prizes, and more.
+          You show up and inspire the next generation of builders.
         </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <NeonButton to="/contact" color="magenta">
+            Get a Quote
+          </NeonButton>
+          <NeonButton to="/contact" color="cyan">
+            Book a Free Consultation
+          </NeonButton>
+        </div>
       </div>
 
-      {/* Services Overview */}
+      {/* Features Grid */}
       <section className="mb-16">
         <GlitchHeading 
-          text="What We Offer" 
+          text="🎯 What's Included" 
           className="text-2xl md:text-3xl mb-8 text-center"
-          color="cyan" 
+          color="magenta"
           level={2}
         />
+        <p className="text-gray-300 text-center mb-8">
+          Every event is fully customized to your goals, audience, and brand.
+          We're not just a platform. We're your partner.
+        </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <NeonCard 
               key={index}
               color={index % 3 === 0 ? 'magenta' : index % 3 === 1 ? 'cyan' : 'ultraviolet'}
             >
-              <h3 className={`text-xl mb-3 ${index % 3 === 0 ? 'neon-text' : index % 3 === 1 ? 'neon-text-cyan' : 'neon-text-ultraviolet'}`}>
-                {feature.title}
+              <h3 className="text-xl mb-4 flex items-center gap-2">
+                <span>{feature.icon}</span>
+                <span className="neon-text">{feature.title}</span>
               </h3>
-              <p className="text-gray-300">{feature.description}</p>
+              <ul className="space-y-2">
+                {feature.points.map((point, i) => (
+                  <li key={i} className="text-gray-300 flex items-start gap-2">
+                    <span className="text-neon-cyan">•</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
             </NeonCard>
           ))}
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="mb-16 glowing-container-cyan p-8">
+      <section className="mb-16">
         <GlitchHeading 
-          text="Client Testimonials" 
+          text="💬 What Our Partners Say" 
           className="text-2xl md:text-3xl mb-8 text-center"
           color="cyan"
           level={2}
         />
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {clients.map((client, index) => (
-            <div key={index} className="bg-black/50 p-6 border border-neon-cyan/30">
-              <p className="text-gray-300 mb-4 italic">"{client.quote}"</p>
-              <p className="text-neon-cyan font-semibold">{client.name}</p>
-              <p className="text-gray-400 text-sm">{client.role}</p>
-            </div>
+          {testimonials.map((testimonial, index) => (
+            <NeonCard key={index} color="cyan">
+              <p className="text-gray-300 italic mb-4">"{testimonial.quote}"</p>
+              <p className="neon-text-cyan font-semibold">{testimonial.author}</p>
+              <p className="text-gray-400">{testimonial.role}</p>
+            </NeonCard>
           ))}
         </div>
       </section>
@@ -119,87 +189,64 @@ const Host = () => {
       {/* How It Works */}
       <section className="mb-16">
         <GlitchHeading 
-          text="How It Works" 
+          text="🛠️ How It Works" 
           className="text-2xl md:text-3xl mb-8 text-center"
           color="ultraviolet"
           level={2}
         />
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <ol className="space-y-6 relative border-l-2 border-dashed border-neon-ultraviolet ml-4">
-              <li className="ml-6">
-                <div className="absolute w-4 h-4 bg-neon-ultraviolet rounded-full -left-[0.44rem]"></div>
-                <h3 className="text-xl mb-2 neon-text-ultraviolet">Initial Consultation</h3>
-                <p className="text-gray-300">We'll discuss your goals, audience, timeline, and budget to create a tailored hackathon plan.</p>
-              </li>
-              <li className="ml-6">
-                <div className="absolute w-4 h-4 bg-neon-ultraviolet rounded-full -left-[0.44rem]"></div>
-                <h3 className="text-xl mb-2 neon-text-ultraviolet">Custom Platform Setup</h3>
-                <p className="text-gray-300">We'll set up a branded hackathon platform, including registration, project submission, and judging systems.</p>
-              </li>
-              <li className="ml-6">
-                <div className="absolute w-4 h-4 bg-neon-ultraviolet rounded-full -left-[0.44rem]"></div>
-                <h3 className="text-xl mb-2 neon-text-ultraviolet">Event Execution</h3>
-                <p className="text-gray-300">Our team will handle technical support, mentorship coordination, and day-of operations.</p>
-              </li>
-              <li className="ml-6">
-                <div className="absolute w-4 h-4 bg-neon-ultraviolet rounded-full -left-[0.44rem]"></div>
-                <h3 className="text-xl mb-2 neon-text-ultraviolet">Post-Event Analysis</h3>
-                <p className="text-gray-300">We'll provide comprehensive analytics and feedback to measure the success of your hackathon.</p>
-              </li>
-            </ol>
-          </div>
-          
-          <div className="glowing-container-ultraviolet p-6">
-            <GlitchHeading 
-              text="Perfect For" 
-              className="text-xl mb-4"
-              color="ultraviolet"
-              level={3}
-            />
-            <ul className="space-y-3 mb-6">
-              <li className="flex items-center text-gray-300">
-                <span className="inline-block w-3 h-3 bg-neon-ultraviolet mr-3"></span>
-                Universities and colleges hosting tech events
-              </li>
-              <li className="flex items-center text-gray-300">
-                <span className="inline-block w-3 h-3 bg-neon-ultraviolet mr-3"></span>
-                High school coding clubs and STEM programs
-              </li>
-              <li className="flex items-center text-gray-300">
-                <span className="inline-block w-3 h-3 bg-neon-ultraviolet mr-3"></span>
-                Companies looking to engage with student talent
-              </li>
-              <li className="flex items-center text-gray-300">
-                <span className="inline-block w-3 h-3 bg-neon-ultraviolet mr-3"></span>
-                Tech communities building their networks
-              </li>
-              <li className="flex items-center text-gray-300">
-                <span className="inline-block w-3 h-3 bg-neon-ultraviolet mr-3"></span>
-                Non-profits promoting tech education and access
-              </li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {steps.map((step, index) => (
+            <NeonCard key={index} color="ultraviolet">
+              <div className="text-4xl mb-4">{index + 1}</div>
+              <h3 className="text-xl mb-2 neon-text-ultraviolet">{step.title}</h3>
+              <p className="text-gray-300">{step.description}</p>
+            </NeonCard>
+          ))}
+        </div>
+      </section>
+
+      {/* Perfect For */}
+      <section className="mb-16">
+        <GlitchHeading 
+          text="✅ Perfect For" 
+          className="text-2xl md:text-3xl mb-8 text-center"
+          color="magenta"
+          level={2}
+        />
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {perfectFor.map((item, index) => (
+            <div key={index} className="flex items-center gap-4 text-gray-300">
+              <span className="text-neon-magenta">•</span>
+              {item}
+            </div>
+          ))}
         </div>
       </section>
 
       {/* CTA */}
       <section className="text-center">
         <GlitchHeading 
-          text="Ready to Host Your Own Hackathon?" 
+          text="🎯 Ready to Host Your Own Hackathon?" 
           className="text-2xl md:text-3xl mb-4"
-          color="magenta"
+          color="cyan"
           level={2}
         />
         
         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-          Contact us today to get a personalized quote and start planning your custom hackathon event.
+          Let's bring your idea to life.
+          Fast setup. Zero hassle. Unforgettable impact.
         </p>
         
-        <NeonButton to="/contact" color="magenta" className="px-10 py-3">
-          Get a Quote
-        </NeonButton>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <NeonButton to="/contact" color="magenta">
+            Get a Quote
+          </NeonButton>
+          <NeonButton to="/contact" color="cyan">
+            Book a Consultation
+          </NeonButton>
+        </div>
       </section>
     </div>
   );
