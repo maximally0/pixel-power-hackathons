@@ -94,15 +94,21 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:block">
-          <Button 
-            className={cn(
-              "bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-6 py-2 rounded-none neon-border-ultraviolet transition-all duration-300 text-xs tracking-[0.15em] font-bold",
-              scrolled ? "scale-95" : "",
-              "hover:scale-105 hover:translate-y-[-2px]"
-            )}
+          <a 
+            href="https://discord.gg/S2YyGtBWKa"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            JOIN DISCORD
-          </Button>
+            <Button 
+              className={cn(
+                "bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-6 py-2 rounded-none neon-border-ultraviolet transition-all duration-300 text-xs tracking-[0.15em] font-bold",
+                scrolled ? "scale-95" : "",
+                "hover:scale-105 hover:translate-y-[-2px]"
+              )}
+            >
+              JOIN DISCORD
+            </Button>
+          </a>
         </div>
 
         <button
@@ -167,12 +173,18 @@ const Navbar = () => {
               </Link>
             )
           ))}
-          <Button 
-            className="w-full bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-5 py-3 rounded-none neon-border-ultraviolet text-xs tracking-[0.15em] uppercase font-bold"
+          <a 
+            href="https://discord.gg/S2YyGtBWKa"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsOpen(false)}
           >
-            JOIN DISCORD
-          </Button>
+            <Button 
+              className="w-full bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-5 py-3 rounded-none neon-border-ultraviolet text-xs tracking-[0.15em] uppercase font-bold"
+            >
+              JOIN DISCORD
+            </Button>
+          </a>
         </div>
       </div>
     </nav>
