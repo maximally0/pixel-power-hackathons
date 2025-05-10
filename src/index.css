@@ -38,6 +38,12 @@
   font-size: 0.6rem;
 }
 
+.nav-item-spacing {
+  letter-spacing: 0.15em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 20%;

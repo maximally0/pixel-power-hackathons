@@ -38,23 +38,23 @@ const Navbar = () => {
       scrolled ? "bg-background/95 backdrop-blur-lg shadow-lg" : "bg-background/90 backdrop-blur-md",
       scrolled ? "border-b border-neon-magenta/40" : "border-b border-neon-magenta/30"
     )}>
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <Link 
           to="/" 
           className={cn(
-            "text-2xl md:text-3xl font-bold tracking-wider neon-text transition-all duration-300",
-            scrolled ? "scale-90" : ""
+            "text-xl md:text-2xl font-bold tracking-[0.2em] neon-text transition-all duration-300 hover:scale-105",
+            scrolled ? "scale-95" : ""
           )}
         >
           MAXIMALLY
         </Link>
 
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-10">
           {navItems.map((item) => (
             <Link
               key={item.path}
               to={item.path}
-              className="text-foreground hover:neon-text transition-all duration-200 tracking-wider hover:scale-105"
+              className="text-foreground hover:neon-text transition-all duration-200 tracking-[0.15em] hover:scale-105 text-xs uppercase py-2"
             >
               {item.label}
             </Link>
@@ -64,8 +64,9 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Button 
             className={cn(
-              "bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-5 py-2 rounded-none neon-border-ultraviolet transition-all duration-300",
-              scrolled ? "scale-95" : ""
+              "bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-6 py-2 rounded-none neon-border-ultraviolet transition-all duration-300 text-xs tracking-[0.15em] font-bold",
+              scrolled ? "scale-95" : "",
+              "hover:scale-105 hover:translate-y-[-2px]"
             )}
           >
             JOIN DISCORD
