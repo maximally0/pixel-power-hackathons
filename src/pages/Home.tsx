@@ -10,10 +10,10 @@ const Home = () => {
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center text-center px-4">
         <NeonCard color="magenta" className="max-w-4xl w-full py-12 px-8">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 neon-text animate-flicker">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 neon-text animate-flicker">
             ENTER THE GRID
           </h1>
-          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto floating">
+          <p className="text-base md:text-lg mb-12 max-w-3xl mx-auto floating">
             Host and join epic online hackathons. For students, schools, and companies.
           </p>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -43,8 +43,8 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <NeonCard color="magenta">
-              <h3 className="text-xl mb-4 neon-text">Student Focused</h3>
-              <p className="text-lg text-gray-300 floating">
+              <h3 className="text-lg mb-4 neon-text">Student Focused</h3>
+              <p className="text-sm text-gray-300 floating">
                 Student-focused hackathons with mentors and workshops to boost your skills.
               </p>
             </NeonCard>
@@ -87,7 +87,7 @@ const Home = () => {
                   level={2}
                 />
                 
-                <p className="mb-6 text-lg text-gray-300">
+                <p className="mb-6 text-sm text-gray-300">
                   Our flagship annual hackathon brings together students from around the world for 
                   48 hours of coding, creativity, and collaboration. With $10,000 in prizes and 
                   mentors from leading tech companies, this is the ultimate student hackathon experience.
@@ -131,7 +131,7 @@ const Home = () => {
               className="text-3xl md:text-4xl mb-6"
             />
             
-            <p className="text-xl mb-10 max-w-2xl mx-auto text-gray-300">
+            <p className="text-base mb-10 max-w-2xl mx-auto text-gray-300">
               Whether you're a student looking to join a hackathon, or an organization 
               wanting to host one, we've got you covered.
             </p>
