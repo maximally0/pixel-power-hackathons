@@ -23,7 +23,7 @@ const NeonCard: React.FC<NeonCardProps> = ({
     <div 
       className={cn(
         colorClasses[color],
-        'p-6 transition-all duration-300 hover:scale-[1.01]',
+        'p-6 transition-all duration-300 hover:scale-[1.01] rounded-lg',
         className
       )}
     >

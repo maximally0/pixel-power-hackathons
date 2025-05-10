@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,7 +35,7 @@
     --input: 0 0% 15%;
     --ring: 300 100% 50%;
 
-    --radius: 0rem;
+    --radius: 0.75rem;
   }
 }
 
@@ -45,7 +45,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-pixel;
+    @apply bg-background text-foreground font-pixel font-bold text-base;
     background-color: #0d0d0d;
     background-image: 
       linear-gradient(rgba(255, 0, 255, 0.05) 1px, transparent 1px),
@@ -57,7 +57,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply uppercase tracking-wider;
+    @apply uppercase tracking-wider font-bold;
   }
 
   ::selection {
@@ -67,17 +67,17 @@
 
 @layer components {
   .neon-border {
-    @apply border-2 border-transparent relative;
+    @apply border-2 border-transparent relative rounded-lg;
     box-shadow: 0 0 5px theme('colors.neon.magenta'), 0 0 10px theme('colors.neon.magenta');
   }
 
   .neon-border-cyan {
-    @apply border-2 border-transparent relative;
+    @apply border-2 border-transparent relative rounded-lg;
     box-shadow: 0 0 5px theme('colors.neon.cyan'), 0 0 10px theme('colors.neon.cyan');
   }
 
   .neon-border-ultraviolet {
-    @apply border-2 border-transparent relative;
+    @apply border-2 border-transparent relative rounded-lg;
     box-shadow: 0 0 5px theme('colors.neon.ultraviolet'), 0 0 10px theme('colors.neon.ultraviolet');
   }
 
@@ -100,22 +100,22 @@
   }
 
   .pixel-border {
-    @apply border-[1px] border-dashed;
+    @apply border-[1px] border-dashed rounded-lg;
     background-clip: padding-box;
   }
 
   .glowing-container {
-    @apply bg-black/40 backdrop-blur-sm border border-neon-magenta/30 shadow-xl;
+    @apply bg-black/40 backdrop-blur-sm border border-neon-magenta/30 shadow-xl rounded-lg;
     box-shadow: 0 0 15px theme('colors.neon.magenta/20'), inset 0 0 15px theme('colors.neon.magenta/10');
   }
 
   .glowing-container-cyan {
-    @apply bg-black/40 backdrop-blur-sm border border-neon-cyan/30 shadow-xl;
+    @apply bg-black/40 backdrop-blur-sm border border-neon-cyan/30 shadow-xl rounded-lg;
     box-shadow: 0 0 15px theme('colors.neon.cyan/20'), inset 0 0 15px theme('colors.neon.cyan/10');
   }
 
   .glowing-container-ultraviolet {
-    @apply bg-black/40 backdrop-blur-sm border border-neon-ultraviolet/30 shadow-xl;
+    @apply bg-black/40 backdrop-blur-sm border border-neon-ultraviolet/30 shadow-xl rounded-lg;
     box-shadow: 0 0 15px theme('colors.neon.ultraviolet/20'), inset 0 0 15px theme('colors.neon.ultraviolet/10');
   }
 }
