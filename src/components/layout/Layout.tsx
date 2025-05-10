@@ -15,7 +15,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   }, [pathname]);
 
   return (
-    <div className="flex flex-col min-h-screen text-lg">
+    <div className="flex flex-col min-h-screen text-base md:text-lg">
       <Navbar />
       <main className="flex-grow pt-20">{children}</main>
       <Footer />

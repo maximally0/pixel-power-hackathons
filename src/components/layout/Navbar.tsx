@@ -114,9 +114,14 @@ const Navbar = () => {
 
       {/* Mobile Menu with Animation */}
       <div className={cn(
-        "md:hidden fixed inset-x-0 top-[64px] bg-black/95 backdrop-blur-md border-b border-neon-magenta/30 transition-all duration-300 overflow-hidden shadow-lg z-50",
+        "md:hidden fixed inset-x-0 top-[64px] bg-black/95 backdrop-blur-md border-b border-neon-magenta/30 transition-all duration-300 overflow-auto shadow-lg z-50",
         isOpen ? "max-h-[calc(100vh-64px)] opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-2"
-      )}>
+      )}
+      style={{ 
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
+        WebkitOverflowScrolling: 'touch'
+      }}>
         <div className="container mx-auto px-4 py-6 space-y-6">
           {navItems.map((item, index) => (
             item.items ? (
