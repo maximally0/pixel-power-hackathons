@@ -36,6 +36,118 @@ const JudgesMentors = () => {
     {
       name: "Dr. Thomas Fischer",
       role: "Tech Expert - SAP Concur - Washington, United States"
+    },
+    {
+      name: "Ravi Laudya",
+      role: "Tech expert with 19+ years in software architecture and AI automation"
+    },
+    {
+      name: "Omkar Gorde",
+      role: "Cyber forensics expert at Mumbai CyberPolice"
+    },
+    {
+      name: "Nina Rodriguez",
+      role: "Senior Site Reliability Engineer at Broadcom - Chicago"
+    },
+    {
+      name: "Advait Patel",
+      role: "Principal Enterprise Architect - Elevance Health"
+    },
+    {
+      name: "Sadhasivam M",
+      role: "Principal Enterprise Architect - AI/ML & Healthcare Analytics"
+    },
+    {
+      name: "Angelina Samoilova",
+      role: "Entrepreneur & Sales Leader - Los Angeles"
+    },
+    {
+      name: "Bhanuprakash Madupati",
+      role: "Senior Software Engineer - Full Stack & Azure Expert"
+    },
+    {
+      name: "Sujay Jain",
+      role: "Senior Software Engineer at Netflix - San Francisco"
+    },
+    {
+      name: "Oleksandr Khrustalov",
+      role: "Principal Software Engineer at proSapient"
+    },
+    {
+      name: "Bharath Sagi",
+      role: "Senior Data Scientist at Starbucks"
+    },
+    {
+      name: "Sravan Chittimalla",
+      role: "Senior Backend Software Engineer at Glo Digital"
+    },
+    {
+      name: "Nimit Patel",
+      role: "Principal Data Scientist II at McKinsey & Company"
+    },
+    {
+      name: "Vishal Shah",
+      role: "Data Analyst & Machine Learning Expert"
+    },
+    {
+      name: "Yanjia Guo",
+      role: "Co-Founder of Mathos.ai"
+    },
+    {
+      name: "Romina Gomez",
+      role: "Lead Frontend Engineer at Struck Studio"
+    },
+    {
+      name: "Yichen Wang",
+      role: "Quantitative Associate - Cryptocurrency & Finance"
+    },
+    {
+      name: "Nikhil Sonti",
+      role: "Co-Founder & CEO at Felafax AI"
+    },
+    {
+      name: "Raj Jaiswal",
+      role: "Founder & CTO at Neyon Labs"
+    },
+    {
+      name: "Louison Dumont",
+      role: "Founder at Bitproof, Inc. - Lisbon"
+    },
+    {
+      name: "Nastassia Shahun",
+      role: "Senior IT Business Analyst at Flip"
+    },
+    {
+      name: "Aditya Mehra",
+      role: "Chief Technical Officer at Infinict"
+    },
+    {
+      name: "Madhuri S Sarma",
+      role: "VP of Engineering at Carta"
+    },
+    {
+      name: "Sourav Sethia",
+      role: "Business Intelligence Engineer at Amazon"
+    },
+    {
+      name: "Tommy Tran",
+      role: "Software Engineer at Ramp"
+    },
+    {
+      name: "Gabriel Labrada",
+      role: "Director of Engineering at Process Street"
+    },
+    {
+      name: "Zekun Wei",
+      role: "Data Scientist at Microsoft - San Francisco"
+    },
+    {
+      name: "Varre Samyukta",
+      role: "Senior Data Engineer at Mastercard"
+    },
+    {
+      name: "Olga Badiukova",
+      role: "Oracle Database Administrator at CS Ltd"
     }
   ];
 
