@@ -3,6 +3,12 @@ import React from 'react';
 import GlitchHeading from '@/components/ui/GlitchHeading';
 import NeonCard from '@/components/ui/NeonCard';
 import NeonButton from '@/components/ui/NeonButton';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 const JudgesMentors = () => {
   const maximallyMentors2025 = [
@@ -189,14 +195,23 @@ const JudgesMentors = () => {
           color="cyan"
           level={2}
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {codequest2025Judges.map((judge, index) => (
-            <NeonCard key={index} color="cyan">
-              <h3 className="text-xl mb-2 neon-text-cyan">{judge.name}</h3>
-              <p className="text-gray-300">{judge.role}</p>
-            </NeonCard>
-          ))}
-        </div>
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="codequest-2025">
+            <AccordionTrigger className="text-xl neon-text-cyan">
+              View All Judges
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-4">
+                {codequest2025Judges.map((judge, index) => (
+                  <NeonCard key={index} color="cyan">
+                    <h3 className="text-xl mb-2 neon-text-cyan">{judge.name}</h3>
+                    <p className="text-gray-300">{judge.role}</p>
+                  </NeonCard>
+                ))}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
