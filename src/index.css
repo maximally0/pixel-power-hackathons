@@ -100,8 +100,9 @@
   }
 
   .pixel-border {
-    @apply border-[1px] border-dashed rounded-lg;
+    @apply border-[2px] border-dashed rounded-lg border-neon-ultraviolet;
     background-clip: padding-box;
+    box-shadow: inset 0 0 10px theme('colors.neon.ultraviolet/30');
   }
 
   .glowing-container {
@@ -125,6 +126,22 @@
     background-image: linear-gradient(rgba(255, 0, 255, 0.1) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 0, 255, 0.1) 1px, transparent 1px);
     background-size: 20px 20px;
+  }
+  
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
   }
 }
 
