@@ -1,6 +1,3 @@
 
 User-agent: *
 Allow: /
-Sitemap: https://hackathon.maximally.in/sitemap.xml
-Disallow: /private/
-Disallow: /admin/
