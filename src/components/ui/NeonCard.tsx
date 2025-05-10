@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { cn } from '@/lib/utils';
 
@@ -20,7 +19,7 @@ const NeonCard: React.FC<NeonCardProps> = ({
     cyan: 'glowing-container-cyan',
     ultraviolet: 'glowing-container-ultraviolet'
   };
-  
+
   return (
     <div 
       className={cn(

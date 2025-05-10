@@ -54,7 +54,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-pixel font-bold text-xs;
+    @apply bg-background text-foreground font-pixel font-bold text-[10px];
     background-color: #0d0d0d;
     background-image: 
       linear-gradient(rgba(255, 0, 255, 0.05) 1px, transparent 1px),
@@ -131,6 +131,14 @@
 }
 
 @layer utilities {
+  .text-xxs {
+    font-size: 0.625rem;
+  }
+  
+  .text-xxxs {
+    font-size: 0.5rem;
+  }
+
   .grid-pattern {
     background-image: linear-gradient(rgba(255, 0, 255, 0.1) 1px, transparent 1px),
       linear-gradient(90deg, rgba(255, 0, 255, 0.1) 1px, transparent 1px);

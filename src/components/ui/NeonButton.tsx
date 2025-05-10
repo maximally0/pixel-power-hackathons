@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
@@ -25,9 +24,9 @@ const NeonButton: React.FC<NeonButtonProps> = ({
     cyan: 'bg-black hover:bg-neon-cyan/10 border-neon-cyan text-white shadow-[0_0_10px_theme(colors.neon.cyan),inset_0_0_10px_theme(colors.neon.cyan/30)] hover:shadow-[0_0_20px_theme(colors.neon.cyan),inset_0_0_20px_theme(colors.neon.cyan/30)]',
     ultraviolet: 'bg-black hover:bg-neon-ultraviolet/10 border-neon-ultraviolet text-white shadow-[0_0_10px_theme(colors.neon.ultraviolet),inset_0_0_10px_theme(colors.neon.ultraviolet/30)] hover:shadow-[0_0_20px_theme(colors.neon.ultraviolet),inset_0_0_20px_theme(colors.neon.ultraviolet/30)]'
   };
-  
-  const baseClasses = 'px-6 py-2 border-2 tracking-wider uppercase transition-all duration-300 inline-block text-center rounded-lg font-bold text-base';
-  
+
+  const baseClasses = 'px-6 py-2 border-2 tracking-wider uppercase transition-all duration-300 inline-block text-center rounded-lg font-bold text-sm';
+
   if (to) {
     return (
       <Link
@@ -42,7 +41,7 @@ const NeonButton: React.FC<NeonButtonProps> = ({
       </Link>
     );
   }
-  
+
   if (href) {
     return (
       <a
@@ -59,7 +58,7 @@ const NeonButton: React.FC<NeonButtonProps> = ({
       </a>
     );
   }
-  
+
   return (
     <button
       onClick={onClick}
