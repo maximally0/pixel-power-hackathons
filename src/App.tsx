@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -17,6 +16,7 @@ import JudgesMentors from "./pages/JudgesMentors";
 import DiscordGuidelines from "./pages/DiscordGuidelines";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Commitment from "./pages/Commitment";
+import { Helmet } from 'react-helmet-async';
 
 const queryClient = new QueryClient();
 
