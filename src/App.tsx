@@ -13,6 +13,7 @@ import Sponsors from "./pages/Sponsors";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import SubmissionGuidelines from "./pages/SubmissionGuidelines";
+import JudgesMentors from "./pages/JudgesMentors";
 import DiscordGuidelines from "./pages/DiscordGuidelines";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Commitment from "./pages/Commitment";
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/students" element={<Students />} />
             <Route path="/host" element={<Host />} />
             <Route path="/sponsors" element={<Sponsors />} />
+            <Route path="/judges-mentors" element={<JudgesMentors />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/submission-guidelines" element={<SubmissionGuidelines />} />
             <Route path="/discord-guidelines" element={<DiscordGuidelines />} />
