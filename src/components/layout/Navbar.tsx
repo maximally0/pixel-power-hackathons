@@ -26,7 +26,14 @@ const Navbar = () => {
   const navItems = [
     { label: 'Home', path: '/' },
     { label: 'Hackathons', path: '/hackathons' },
-    { label: 'For Students', path: '/students' },
+    { 
+      label: 'Resources',
+      items: [
+        { label: 'Submission Guidelines', path: '/submission-guidelines' },
+        { label: 'Discord Guidelines', path: '/discord-guidelines' },
+        { label: 'Privacy Policy', path: '/privacy-policy' },
+      ]
+    },
     { label: 'Host', path: '/host' },
     { label: 'Sponsors', path: '/sponsors' },
     { label: 'Contact', path: '/contact' },
@@ -51,13 +58,32 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center">
           {navItems.map((item) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className="text-foreground hover:neon-text transition-all duration-200 tracking-[0.15em] hover:scale-105 text-xs uppercase py-2 px-4"
-            >
-              {item.label}
-            </Link>
+            item.items ? (
+              <div key={item.label} className="relative group">
+                <button className="text-foreground hover:neon-text transition-all duration-200 tracking-[0.15em] hover:scale-105 text-xs uppercase py-2 px-4">
+                  {item.label}
+                </button>
+                <div className="absolute top-full left-0 hidden group-hover:block bg-background/95 backdrop-blur-lg border border-neon-magenta/30 min-w-[200px]">
+                  {item.items.map((subItem) => (
+                    <Link
+                      key={subItem.path}
+                      to={subItem.path}
+                      className="block px-4 py-2 text-xs uppercase hover:bg-neon-magenta/10 hover:text-neon-magenta transition-colors duration-200"
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={item.path}
+                to={item.path}
+                className="text-foreground hover:neon-text transition-all duration-200 tracking-[0.15em] hover:scale-105 text-xs uppercase py-2 px-4"
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </div>
 
@@ -93,19 +119,42 @@ const Navbar = () => {
       )}>
         <div className="container mx-auto px-4 py-6 space-y-6">
           {navItems.map((item, index) => (
-            <Link
-              key={item.path}
-              to={item.path}
-              className={cn(
-                "block py-3 text-foreground hover:neon-text transition-all duration-200 transform text-sm tracking-[0.15em] uppercase",
-                isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0",
-                "transition-all duration-300",
-                `delay-[${index * 50}ms]`
-              )}
-              onClick={() => setIsOpen(false)}
-            >
-              {item.label}
-            </Link>
+            item.items ? (
+              <div key={item.label} className="space-y-1">
+                <div className="py-2 text-foreground text-sm tracking-[0.15em] uppercase opacity-60">
+                  {item.label}
+                </div>
+                {item.items.map((subItem, subIndex) => (
+                  <Link
+                    key={subItem.path}
+                    to={subItem.path}
+                    className={cn(
+                      "block py-2 pl-4 text-foreground hover:neon-text transition-all duration-200 transform text-sm tracking-[0.15em] uppercase",
+                      isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0",
+                      "transition-all duration-300",
+                      `delay-[${(index * 3 + subIndex) * 50}ms]`
+                    )}
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {subItem.label}
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              <Link
+                key={item.path}
+                to={item.path}
+                className={cn(
+                  "block py-3 text-foreground hover:neon-text transition-all duration-200 transform text-sm tracking-[0.15em] uppercase",
+                  isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0",
+                  "transition-all duration-300",
+                  `delay-[${index * 50}ms]`
+                )}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </Link>
+            )
           ))}
           <Button 
             className="w-full bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-5 py-3 rounded-none neon-border-ultraviolet text-xs tracking-[0.15em] uppercase font-bold"
