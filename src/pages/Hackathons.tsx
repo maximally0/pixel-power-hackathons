@@ -9,7 +9,7 @@ const Hackathons = () => {
     {
       id: 1,
       title: 'Maximally Makeathon',
-      date: 'March 15-17, 2025',
+      date: 'July 1-3, 2025',
       description: 'Create, innovate, and build the next big thing. Join us for an exciting hackathon experience where creativity meets technology.',
       devpostLink: 'https://devpost.com/',
       discordLink: 'https://discord.gg/S2YyGtBWKa',
