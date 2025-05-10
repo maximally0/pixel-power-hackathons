@@ -122,6 +122,68 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Judges and Mentors */}
+      <section className="py-16 px-4">
+        <div className="container mx-auto">
+          <NeonCard color="cyan" className="mb-12 py-8">
+            <GlitchHeading 
+              text="Our Judges & Mentors"
+              className="text-2xl md:text-3xl mb-10 text-center"
+              color="cyan"
+            />
+          </NeonCard>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {/* Current Judges/Mentors */}
+            <NeonCard color="magenta">
+              <div className="text-center p-4">
+                <div className="w-24 h-24 rounded-full bg-neon-magenta/20 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👩‍💻</span>
+                </div>
+                <h3 className="text-lg mb-2 neon-text">Sarah Chen</h3>
+                <p className="text-sm text-gray-300 mb-2">Senior AI Engineer at TechCorp</p>
+                <p className="text-xs text-gray-400">Judge since 2023</p>
+              </div>
+            </NeonCard>
+
+            <NeonCard color="cyan">
+              <div className="text-center p-4">
+                <div className="w-24 h-24 rounded-full bg-neon-cyan/20 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👨‍💻</span>
+                </div>
+                <h3 className="text-lg mb-2 neon-text-cyan">Alex Rivera</h3>
+                <p className="text-sm text-gray-300 mb-2">Lead Developer at StartupX</p>
+                <p className="text-xs text-gray-400">Mentor since 2022</p>
+              </div>
+            </NeonCard>
+
+            <NeonCard color="ultraviolet">
+              <div className="text-center p-4">
+                <div className="w-24 h-24 rounded-full bg-neon-ultraviolet/20 mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-4xl">👩‍🏫</span>
+                </div>
+                <h3 className="text-lg mb-2 neon-text-ultraviolet">Dr. Maya Patel</h3>
+                <p className="text-sm text-gray-300 mb-2">Professor of Computer Science</p>
+                <p className="text-xs text-gray-400">Judge & Mentor since 2021</p>
+              </div>
+            </NeonCard>
+          </div>
+
+          {/* Past Judges/Mentors */}
+          <NeonCard color="ultraviolet" className="p-8">
+            <h3 className="text-xl mb-6 text-center neon-text-ultraviolet">Past Contributors</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+              {['James Wilson', 'Elena Santos', 'David Kim', 'Priya Sharma', 'Marcus Johnson', 'Lisa Chen'].map((name, index) => (
+                <div key={index} className="p-2">
+                  <p className="text-sm text-gray-300">{name}</p>
+                  <p className="text-xs text-gray-400">2021-2022</p>
+                </div>
+              ))}
+            </div>
+          </NeonCard>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="py-16 px-4">
         <div className="container mx-auto text-center">
