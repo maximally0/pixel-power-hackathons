@@ -88,16 +88,16 @@ const Navbar = () => {
 
       {/* Mobile Menu with Animation */}
       <div className={cn(
-        "md:hidden bg-black/95 backdrop-blur-md border-b border-neon-magenta/30 transition-all duration-300 overflow-hidden",
-        isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        "md:hidden fixed inset-x-0 top-[64px] bg-black/95 backdrop-blur-md border-b border-neon-magenta/30 transition-all duration-300 overflow-hidden shadow-lg",
+        isOpen ? "max-h-[calc(100vh-64px)] opacity-100" : "max-h-0 opacity-0"
       )}>
-        <div className="container mx-auto px-4 py-3 space-y-4">
+        <div className="container mx-auto px-4 py-6 space-y-6">
           {navItems.map((item, index) => (
             <Link
               key={item.path}
               to={item.path}
               className={cn(
-                "block py-2 text-foreground hover:neon-text transition-all duration-200 transform",
+                "block py-3 text-foreground hover:neon-text transition-all duration-200 transform text-sm tracking-[0.15em] uppercase",
                 isOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0",
                 "transition-all duration-300",
                 `delay-[${index * 50}ms]`
@@ -108,7 +108,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Button 
-            className="w-full bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-5 py-2 rounded-none neon-border-ultraviolet"
+            className="w-full bg-neon-ultraviolet hover:bg-neon-ultraviolet/80 text-white px-5 py-3 rounded-none neon-border-ultraviolet text-xs tracking-[0.15em] uppercase font-bold"
             onClick={() => setIsOpen(false)}
           >
             JOIN DISCORD
