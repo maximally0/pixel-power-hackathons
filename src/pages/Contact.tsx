@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import GlitchHeading from '@/components/ui/GlitchHeading';
@@ -21,16 +20,16 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Simulate form submission - in a real app, this would send data to a backend
     console.log('Form submitted:', formData);
-    
+
     toast({
       title: "Message Sent!",
       description: "We'll get back to you as soon as possible.",
       duration: 5000,
     });
-    
+
     // Reset form
     setFormData({
       name: '',
@@ -74,7 +73,7 @@ const Contact = () => {
                   className="w-full px-4 py-2 bg-black/50 border border-neon-magenta/50 text-white focus:outline-none focus:border-neon-magenta"
                 />
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="email" className="block mb-2 text-gray-300">
                   Email
@@ -89,7 +88,7 @@ const Contact = () => {
                   className="w-full px-4 py-2 bg-black/50 border border-neon-magenta/50 text-white focus:outline-none focus:border-neon-magenta"
                 />
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="organization" className="block mb-2 text-gray-300">
                   Organization (Optional)
@@ -103,7 +102,7 @@ const Contact = () => {
                   className="w-full px-4 py-2 bg-black/50 border border-neon-magenta/50 text-white focus:outline-none focus:border-neon-magenta"
                 />
               </div>
-              
+
               <div className="mb-4">
                 <label htmlFor="reason" className="block mb-2 text-gray-300">
                   Reason for Contact
@@ -122,7 +121,7 @@ const Contact = () => {
                   <option value="student">Student Question</option>
                 </select>
               </div>
-              
+
               <div className="mb-6">
                 <label htmlFor="message" className="block mb-2 text-gray-300">
                   Message
@@ -137,7 +136,7 @@ const Contact = () => {
                   className="w-full px-4 py-2 bg-black/50 border border-neon-magenta/50 text-white focus:outline-none focus:border-neon-magenta"
                 ></textarea>
               </div>
-              
+
               <div className="text-center">
                 <NeonButton color="magenta" className="px-10">
                   Send Message
@@ -145,7 +144,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          
+
           {/* Contact Info */}
           <div className="md:col-span-2">
             <div className="glowing-container-cyan p-6">
@@ -155,35 +154,35 @@ const Contact = () => {
                 color="cyan"
                 level={3}
               />
-              
-              <div className="space-y-6">
-                <div>
-                  <p className="text-gray-300 font-semibold mb-1">Email</p>
-                  <a href="mailto:info@maximally.tech" className="neon-text-cyan hover:underline">
-                    info@maximally.tech
-                  </a>
-                </div>
-                
-                <div>
-                  <p className="text-gray-300 font-semibold mb-1">Discord</p>
-                  <a href="https://discord.gg/maximally" target="_blank" rel="noopener noreferrer" className="neon-text-ultraviolet hover:underline">
-                    discord.gg/maximally
-                  </a>
-                </div>
-                
-                <div>
-                  <p className="text-gray-300 font-semibold mb-1">Location</p>
-                  <p className="text-gray-300">
-                    Fully remote with team members worldwide
-                  </p>
-                </div>
+
+              <div className="space-y-8 px-4">
+              <div>
+                <p className="text-gray-300 font-semibold mb-2">Email</p>
+                <a href="mailto:info@maximally.tech" className="neon-text-cyan hover:underline break-all">
+                  info@maximally.tech
+                </a>
               </div>
-              
+
+              <div>
+                <p className="text-gray-300 font-semibold mb-2">Discord</p>
+                <a href="https://discord.gg/maximally" target="_blank" rel="noopener noreferrer" className="neon-text-ultraviolet hover:underline break-all">
+                  discord.gg/maximally
+                </a>
+              </div>
+
+              <div>
+                <p className="text-gray-300 font-semibold mb-2">Location</p>
+                <p className="text-gray-300">
+                  Fully remote with team members worldwide
+                </p>
+              </div>
+            </div>
+
               <div className="mt-8 pt-8 border-t border-neon-cyan/30">
                 <p className="text-gray-300 mb-4">
                   For urgent inquiries, please reach out to us on Discord for the fastest response.
                 </p>
-                
+
                 <NeonButton href="https://discord.gg/maximally" color="ultraviolet" className="w-full">
                   Join Discord
                 </NeonButton>
