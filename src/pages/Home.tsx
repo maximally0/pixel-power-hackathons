@@ -13,9 +13,8 @@ const Home = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 neon-text animate-flicker">
             ENTER THE GRID
           </h1>
-          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
-            Maximally runs student-focused online hackathons throughout the year and offers 
-            Hackathon-as-a-Service to schools, clubs, and companies.
+          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto floating">
+            Host and join epic online hackathons. For students, schools, and companies.
           </p>
           <div className="flex flex-col md:flex-row gap-6 justify-center">
             <NeonButton to="/hackathons" color="magenta">
@@ -45,25 +44,22 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <NeonCard color="magenta">
               <h3 className="text-xl mb-4 neon-text">Student Focused</h3>
-              <p className="text-lg text-gray-300">
-                We create hackathons specifically designed for students, with mentors, 
-                workshops, and resources to help you learn and build amazing projects.
+              <p className="text-lg text-gray-300 floating">
+                Student-focused hackathons with mentors and workshops to boost your skills.
               </p>
             </NeonCard>
             
             <NeonCard color="cyan">
               <h3 className="text-xl mb-4 neon-text-cyan">Global Community</h3>
-              <p className="text-lg text-gray-300">
-                Join our international community of student hackers, mentors, and tech 
-                enthusiasts. Connect, collaborate, and code with peers worldwide.
+              <p className="text-lg text-gray-300 floating">
+                Code with peers worldwide in our global hacker community.
               </p>
             </NeonCard>
             
             <NeonCard color="ultraviolet">
               <h3 className="text-xl mb-4 neon-text-ultraviolet">Host Your Own</h3>
-              <p className="text-lg text-gray-300">
-                Our Hackathon-as-a-Service offering makes it easy for schools, clubs, and 
-                companies to run their own customized hackathon events.
+              <p className="text-lg text-gray-300 floating">
+                Easy hackathon hosting for schools and companies. We handle everything.
               </p>
             </NeonCard>
           </div>
