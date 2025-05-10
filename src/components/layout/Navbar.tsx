@@ -35,7 +35,13 @@ const Navbar = () => {
       ]
     },
     { label: 'Host', path: '/host' },
-    { label: 'Sponsors', path: '/sponsors' },
+    { 
+      label: 'Sponsors',
+      items: [
+        { label: 'Sponsors', path: '/sponsors' },
+        { label: 'Judges & Mentors', path: '/judges-mentors' },
+      ]
+    },
     { label: 'Contact', path: '/contact' },
   ];
 
