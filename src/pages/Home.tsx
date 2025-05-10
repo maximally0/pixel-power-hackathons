@@ -7,6 +7,21 @@ import NeonCard from '@/components/ui/NeonCard';
 const Home = () => {
   return (
     <div>
+      {/* Disclaimer Banner */}
+      <div className="bg-background/90 backdrop-blur-md border-y border-neon-cyan/30 py-3 px-4 text-center">
+        <p className="text-sm text-gray-300">
+          <span className="neon-text-cyan">Note:</span> Maximally Hackathon Division is a part of{' '}
+          <a 
+            href="https://maximally.in" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="neon-text-ultraviolet hover:underline"
+          >
+            Maximally.in
+          </a>
+          {' '}but operates as a separate entity.
+        </p>
+      </div>
       {/* Hero Section */}
       <section className="h-screen flex flex-col items-center justify-center text-center px-4">
         <NeonCard color="magenta" className="max-w-4xl w-full py-12 px-8">
