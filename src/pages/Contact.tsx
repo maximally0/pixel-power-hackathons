@@ -46,7 +46,18 @@ const Contact = () => {
                 Fully remote with team members worldwide
               </p>
             </div>
+
+            <div className="mt-4">
+              <NeonButton 
+                href="https://tally.so/r/mOgqXg"
+                color="cyan"
+                className="w-full"
+              >
+                Contact Us
+              </NeonButton>
+            </div>
           </div>
+          
 
           <div className="mt-8 pt-8 border-t border-neon-cyan/30">
             <p className="text-gray-300 mb-4">
