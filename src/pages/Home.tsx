@@ -13,11 +13,11 @@ const Home = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-4">
               <div className="text-left">
                 <h2 className="text-2xl md:text-3xl font-bold neon-text-ultraviolet mb-2">🚀 24-Hour Startup Sprint</h2>
-                <p className="text-gray-300 mb-4">Turn your wildest idea into a real tech startup in just 24 hours! Open to all future founders ages 10-24.</p>
+                <p className="text-gray-300 mb-4">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-300">
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">$5000 in Prizes</span>
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">AI Tools Allowed</span>
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">March 30-31, 2024</span>
+                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">Team of 2-4</span>
+                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">AI + No-Code Tools</span>
+                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">June 1st, 2025</span>
                 </div>
               </div>
               <NeonButton to="/startup-sprint" color="ultraviolet" className="whitespace-nowrap">
