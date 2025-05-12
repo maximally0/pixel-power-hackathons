@@ -17,7 +17,7 @@ import DiscordGuidelines from "./pages/DiscordGuidelines";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Commitment from "./pages/Commitment";
 import { Helmet } from 'react-helmet-async';
-import SEO from './components/SEO';
+import SEO from '@/components/SEO';
 
 const queryClient = new QueryClient();
 
