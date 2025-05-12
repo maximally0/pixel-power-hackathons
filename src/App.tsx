@@ -10,7 +10,8 @@ import Students from "./pages/Students";
 import Host from "./pages/Host";
 import Sponsors from "./pages/Sponsors";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import NotFound from "@/pages/NotFound";
+import StartupSprint from '@/pages/StartupSprint';
 import SubmissionGuidelines from "./pages/SubmissionGuidelines";
 import JudgesMentors from "./pages/JudgesMentors";
 import DiscordGuidelines from "./pages/DiscordGuidelines";
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/discord-guidelines" element={<DiscordGuidelines />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/our-commitment" element={<Commitment />} />
+            <Route path="/startup-sprint" element={<StartupSprint />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
