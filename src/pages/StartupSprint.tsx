@@ -29,12 +29,22 @@ const StartupSprint = () => {
       {/* Hero Section */}
       <section className="text-center mb-16">
         <GlitchHeading 
-          text="24-Hour Startup Challenge" 
+          text="MNCB: Maximally No Code Buildup" 
           className="text-4xl md:text-6xl mb-4"
           color="ultraviolet"
         />
-        <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">Build and launch a real startup in 24 hours</h2>
-        <p className="text-xl neon-text-ultraviolet mb-8">June 1st, 2025 (Online Event)</p>
+        <h2 className="text-2xl md:text-3xl text-gray-300 mb-6">India's fastest teen startup challenge</h2>
+        <p className="text-xl text-gray-300 mb-4">
+          In just 24 hours, teens from across the country team up to go from idea → MVP → pitch — without writing a single line of code.
+        </p>
+        <p className="text-lg text-gray-300 mb-6">
+          Build real products using no-code tools, get mentored by founders and creators, and pitch to a panel of judges.
+          It's startup energy, Gen Z-style: fast, fun, and fearless.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <span className="bg-purple-900/30 px-4 py-2 rounded-full text-gray-300">June 1st, 2025</span>
+          <span className="bg-purple-900/30 px-4 py-2 rounded-full text-gray-300">Ages 13-19</span>
+        </div>
         
         <NeonCard color="ultraviolet" className="inline-block mb-8">
           <div className="text-2xl font-mono">{timeLeft}</div>
