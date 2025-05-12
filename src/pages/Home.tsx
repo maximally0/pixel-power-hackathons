@@ -118,7 +118,7 @@ const Home = () => {
                 </li>
                 <li className="flex items-center justify-center">
                   <span className="w-2 h-2 bg-neon-ultraviolet rounded-full mr-3"></span>
-                  <span>Prizes: $10,000 in cash + swag</span>
+                  <span>Prizes: ₹83,000 ($1000) in cash + swag</span>
                 </li>
                 <li className="flex items-center justify-center">
                   <span className="w-2 h-2 bg-neon-ultraviolet rounded-full mr-3"></span>
