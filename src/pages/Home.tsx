@@ -104,7 +104,7 @@ const Home = () => {
             <div className="text-center mb-8">
               <p className="text-gray-300 mb-6">
                 Join hundreds of student founders for 48 hours of pure creativity, chaos, and code.
-                Maximally Makeathon is our flagship startup hackathon — open globally to all high school students.
+                Compete for prizes worth ₹83,000 ($1000) at Maximally Makeathon — our flagship startup hackathon open globally to all high school students.
               </p>
 
               <ul className="space-y-4 max-w-lg mx-auto mb-8">
