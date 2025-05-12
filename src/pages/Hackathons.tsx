@@ -40,6 +40,22 @@ const Hackathons = () => {
       description: 'The second installment of our CodeQuest series. Breaking barriers in code.',
       devpostLink: 'https://devpost.com/',
       discordLink: 'https://discord.gg/S2YyGtBWKa',
+    },
+    {
+      id: 5,
+      title: 'HACKSKYE SERIES II',
+      date: 'August 16-18, 2024',
+      description: 'The second event in our HackSkye series. Pushing boundaries in innovation.',
+      devpostLink: 'https://devpost.com/',
+      discordLink: 'https://discord.gg/S2YyGtBWKa',
+    },
+    {
+      id: 6,
+      title: 'HACKSKYE \'24',
+      date: 'March 15-17, 2024',
+      description: 'The inaugural HackSkye event that started it all. A celebration of creativity and code.',
+      devpostLink: 'https://devpost.com/',
+      discordLink: 'https://discord.gg/S2YyGtBWKa',
     }
   ];
 
