@@ -12,11 +12,11 @@ const Home = () => {
           <NeonCard color="ultraviolet" className="animate-pulse">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-4">
               <div className="text-left">
-                <h2 className="text-2xl md:text-3xl font-bold neon-text-ultraviolet mb-2">🚀 MNCB: Maximally No Code Buildup</h2>
-                <p className="text-gray-300 mb-4">India's fastest teen startup challenge! Go from idea → MVP → pitch in 24 hours without writing code.</p>
+                <h2 className="text-2xl md:text-3xl font-bold neon-text-ultraviolet mb-2">🚀 24-Hour Startup Sprint</h2>
+                <p className="text-gray-300 mb-4">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
                 <div className="flex flex-wrap gap-4 text-sm text-gray-300">
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">Ages 13-19</span>
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">No-Code Tools</span>
+                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">Team of 2-4</span>
+                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">AI + No-Code Tools</span>
                   <span className="bg-purple-900/30 px-3 py-1 rounded-full">June 1st, 2025</span>
                 </div>
               </div>
