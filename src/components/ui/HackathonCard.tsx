@@ -41,18 +41,20 @@ const HackathonCard: React.FC<HackathonCardProps> = ({
       <p className="text-gray-300 mb-4 flex-grow">{description}</p>
       
       <div className="flex flex-col sm:flex-row gap-2 mt-auto">
-        <NeonButton
-          href={devpostLink}
-          color="ultraviolet"
-          className="w-full sm:w-1/2 text-sm"
-        >
-          Devpost
-        </NeonButton>
+        {(!past || title === 'CodeQuest \'25') && (
+          <NeonButton
+            href={devpostLink}
+            color="ultraviolet"
+            className="w-full sm:w-1/2 text-sm"
+          >
+            Devpost
+          </NeonButton>
+        )}
         
         <NeonButton
           href={discordLink}
           color={past ? 'cyan' : 'magenta'}
-          className="w-full sm:w-1/2 text-sm"
+          className={`w-full ${(!past || title === 'CodeQuest \'25') ? 'sm:w-1/2' : 'sm:w-full'} text-sm`}
         >
           Discord
         </NeonButton>

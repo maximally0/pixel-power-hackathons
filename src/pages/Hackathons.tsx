@@ -11,7 +11,7 @@ const Hackathons = () => {
       title: 'Maximally Makeathon',
       date: 'July 1-3, 2025',
       description: 'Create, innovate, and build the next big thing. Join us for an exciting hackathon experience where creativity meets technology.',
-      devpostLink: 'https://devpost.com/',
+      devpostLink: 'https://maximally-makeathon-2025.devpost.com/',
       discordLink: 'https://discord.gg/S2YyGtBWKa',
     }
   ];
@@ -22,7 +22,7 @@ const Hackathons = () => {
       title: 'CodeQuest \'25',
       date: 'January 20-22, 2025',
       description: 'The latest in our series of CodeQuest hackathons. Where coding meets adventure.',
-      devpostLink: 'https://devpost.com/',
+      devpostLink: 'https://codequest-25.devpost.com/',
       discordLink: 'https://discord.gg/S2YyGtBWKa',
     },
     {
