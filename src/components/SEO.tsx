@@ -38,6 +38,13 @@ const SEO = ({
       {/* Additional SEO */}
       <link rel="canonical" href={url} />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="robots" content="index, follow" />
+      <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+      <meta name="author" content="Maximally" />
+      <meta name="language" content="English" />
+      <meta name="revisit-after" content="7 days" />
+      <meta name="theme-color" content="#000000" />
+      <link rel="manifest" href="/manifest.json" />
     </Helmet>
   );
 };

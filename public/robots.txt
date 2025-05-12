@@ -1,3 +1,14 @@
 
 User-agent: *
 Allow: /
+
+# Sitemaps
+Sitemap: https://hackathon.maximally.in/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Disallow specific paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
