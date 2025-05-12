@@ -7,9 +7,19 @@
     <meta name="description" content="Join Maximally's hackathons and startup bootcamps designed for 13-18 year olds. Launch your tech startup through hands-on learning and expert mentorship." />
     <meta name="keywords" content="student hackathon, teen startup, coding bootcamp, high school entrepreneurs, young founders" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   </head>
-
   <body>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
