@@ -145,6 +145,91 @@ const StartupSprint = () => {
         </div>
       </section>
 
+      {/* Regulations */}
+      <section className="mb-16">
+        <NeonCard color="magenta">
+          <GlitchHeading 
+            text="📋 Regulations" 
+            className="text-2xl mb-6"
+            color="magenta"
+          />
+          <div className="space-y-4 text-gray-300">
+            <p><span className="neon-text-magenta">Event Duration:</span> June 1 - June 2, 2024</p>
+            <p><span className="neon-text-magenta">Team Size Options:</span></p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li>Solo (1 person)</li>
+              <li>Duo (2 people)</li>
+              <li>Trio (3 people)</li>
+              <li>Squad (4 people)</li>
+            </ul>
+            <p><span className="neon-text-magenta">Submission Platforms:</span> Luma and Devpost</p>
+          </div>
+        </NeonCard>
+      </section>
+
+      {/* Judging Criteria */}
+      <section className="mb-16">
+        <NeonCard color="cyan">
+          <GlitchHeading 
+            text="⚖️ Judging Criteria" 
+            className="text-2xl mb-6"
+            color="cyan"
+          />
+          <div className="space-y-6 text-gray-300">
+            <div>
+              <h3 className="text-lg neon-text-cyan mb-2">1. Clarity of Problem & Solution (20%)</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Is the problem real and clearly explained?</li>
+                <li>Does the solution make sense and directly solve it?</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg neon-text-cyan mb-2">2. Execution (25%)</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Did they build something real in 24 hours?</li>
+                <li>Is there a working demo, mockup, or usable product?</li>
+                <li>How resourceful were they with the team?</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg neon-text-cyan mb-2">3. Originality & Creativity (15%)</h3>
+              <ul className="list-disc pl-6">
+                <li>Is the idea fresh or approached differently?</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg neon-text-cyan mb-2">4. Teamwork & Presentation (15%)</h3>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Is the pitch clear, confident, and engaging?</li>
+                <li>Did the team collaborate well and explain their roles?</li>
+              </ul>
+            </div>
+          </div>
+        </NeonCard>
+      </section>
+
+      {/* Pitch Template */}
+      <section className="mb-16">
+        <NeonCard color="ultraviolet">
+          <GlitchHeading 
+            text="🎤 Pitch Template" 
+            className="text-2xl mb-6"
+            color="ultraviolet"
+          />
+          <div className="space-y-4 text-gray-300">
+            <p>Your pitch should cover these key points:</p>
+            <ol className="list-decimal pl-6 space-y-3">
+              <li><span className="neon-text-ultraviolet">Problem solved:</span> What issue are you addressing?</li>
+              <li><span className="neon-text-ultraviolet">Project overview:</span> Brief description of your solution</li>
+              <li><span className="neon-text-ultraviolet">Target audience:</span> Who will use your product?</li>
+              <li><span className="neon-text-ultraviolet">Team contributions:</span> List team members and their roles</li>
+              <li><span className="neon-text-ultraviolet">User acquisition:</span> How will you get users?</li>
+              <li><span className="neon-text-ultraviolet">Market fit:</span> Why does your idea make sense now?</li>
+            </ol>
+          </div>
+        </NeonCard>
+      </section>
+
       {/* Timeline */}
       <section className="mb-16">
         <NeonCard color="cyan">
