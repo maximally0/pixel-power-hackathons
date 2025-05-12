@@ -20,7 +20,7 @@ const Home = () => {
                   <span className="bg-purple-900/30 px-3 py-1 rounded-full">March 30-31, 2024</span>
                 </div>
               </div>
-              <NeonButton to="/hackathons" color="ultraviolet" className="whitespace-nowrap">
+              <NeonButton to="/startup-sprint" color="ultraviolet" className="whitespace-nowrap">
                 Join the Sprint 🏃‍♂️
               </NeonButton>
             </div>
