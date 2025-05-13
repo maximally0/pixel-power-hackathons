@@ -13,9 +13,9 @@ const Home = () => {
             <div className="flex flex-col items-center gap-6 p-6 sm:p-8">
               <div className="text-center w-full">
                 <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold neon-text-ultraviolet mb-4">🚀 24-HOUR STARTUP SPRINT</h2>
-                <p className="text-gray-300 mb-6 text-lg sm:text-xl max-w-3xl mx-auto">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
+                <p className="text-gray-300 mb-6 text-lg sm:text-xl max-w-3xl mx-auto">Build and launch a real startup in 24 hours! Open to all teens.</p>
                 <div className="flex flex-wrap justify-center gap-4 text-base sm:text-lg text-gray-300 mb-8">
-                  <span className="bg-purple-900/30 px-6 py-3 rounded-full">Team of 2-4</span>
+                  <span className="bg-purple-900/30 px-6 py-3 rounded-full">Team of 1-4</span>
                   <span className="bg-purple-900/30 px-6 py-3 rounded-full">AI + No-Code Tools</span>
                   <span className="bg-purple-900/30 px-6 py-3 rounded-full">June 1st, 2025</span>
                 </div>
