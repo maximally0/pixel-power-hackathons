@@ -20,13 +20,22 @@ const Home = () => {
                   <span className="bg-purple-900/30 px-4 sm:px-6 py-2 sm:py-3 rounded-full">June 1st, 2025</span>
                 </div>
               </div>
-              <NeonButton 
-                to="/startup-sprint" 
-                color="ultraviolet" 
-                className="text-xl sm:text-2xl text-center whitespace-nowrap py-4 px-8"
-              >
-                JOIN THE SPRINT 🏃‍♂️
-              </NeonButton>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <NeonButton 
+                  href="https://tally.so/r/w4XOem" 
+                  color="ultraviolet" 
+                  className="text-xl sm:text-2xl text-center whitespace-nowrap py-4 px-8"
+                >
+                  JOIN THE SPRINT 🏃‍♂️
+                </NeonButton>
+                <NeonButton 
+                  to="/startup-sprint" 
+                  color="magenta" 
+                  className="text-xl sm:text-2xl text-center whitespace-nowrap py-4 px-8"
+                >
+                  LEARN MORE 📚
+                </NeonButton>
+              </div>
             </div>
           </NeonCard>
         </div>
