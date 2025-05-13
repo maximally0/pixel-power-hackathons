@@ -50,7 +50,7 @@ const StartupSprint = () => {
         </NeonCard>
 
         <div>
-          <NeonButton href="https://tally.so/r/wMgZkg" color="ultraviolet" className="text-xl px-8 py-4">
+          <NeonButton href="https://tally.so/r/mZgxYe" color="ultraviolet" className="text-xl px-8 py-4">
             Apply Now 🚀
           </NeonButton>
         </div>
