@@ -22,33 +22,35 @@ import SEO from '@/components/SEO';
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <SEO />
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/hackathons" element={<Hackathons />} />
-            <Route path="/students" element={<Students />} />
-            <Route path="/host" element={<Host />} />
-            <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/judges-mentors" element={<JudgesMentors />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/submission-guidelines" element={<SubmissionGuidelines />} />
-            <Route path="/discord-guidelines" element={<DiscordGuidelines />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/our-commitment" element={<Commitment />} />
-            <Route path="/startup-sprint" element={<StartupSprint />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <SEO />
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/hackathons" element={<Hackathons />} />
+              <Route path="/students" element={<Students />} />
+              <Route path="/host" element={<Host />} />
+              <Route path="/sponsors" element={<Sponsors />} />
+              <Route path="/judges-mentors" element={<JudgesMentors />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/submission-guidelines" element={<SubmissionGuidelines />} />
+              <Route path="/discord-guidelines" element={<DiscordGuidelines />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/our-commitment" element={<Commitment />} />
+              <Route path="/startup-sprint" element={<StartupSprint />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </Layout>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+}
 
 export default App;
