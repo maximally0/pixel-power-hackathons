@@ -1,4 +1,3 @@
-
 import React from 'react';
 import GlitchHeading from '@/components/ui/GlitchHeading';
 import NeonCard from '@/components/ui/NeonCard';
@@ -13,11 +12,11 @@ const StartupSprint = () => {
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const distance = eventDate - now;
-      
+
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      
+
       setTimeLeft(`${days}d ${hours}h ${minutes}m`);
     }, 1000);
 
@@ -45,13 +44,13 @@ const StartupSprint = () => {
           <span className="bg-purple-900/30 px-4 py-2 rounded-full text-gray-300">June 1st, 2025</span>
           <span className="bg-purple-900/30 px-4 py-2 rounded-full text-gray-300">Ages 13-19</span>
         </div>
-        
+
         <NeonCard color="ultraviolet" className="inline-block mb-8">
           <div className="text-2xl font-mono">{timeLeft}</div>
         </NeonCard>
 
         <div>
-          <NeonButton to="/apply" color="ultraviolet" className="text-xl px-8 py-4">
+          <NeonButton href="https://tally.so/r/wMgZkg" color="ultraviolet" className="text-xl px-8 py-4">
             Apply Now 🚀
           </NeonButton>
         </div>
@@ -259,7 +258,7 @@ const StartupSprint = () => {
 
       {/* CTA */}
       <section className="text-center mb-16">
-        <NeonButton to="/apply" color="ultraviolet" className="text-xl px-8 py-4 mb-4">
+        <NeonButton href="https://tally.so/r/wMgZkg" color="ultraviolet" className="text-xl px-8 py-4 mb-4">
           Apply Now 🚀
         </NeonButton>
         <p className="text-gray-300">Limited to 100 teams only</p>
