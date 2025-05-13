@@ -20,18 +20,18 @@ const Home = () => {
                   <span className="bg-purple-900/30 px-4 sm:px-6 py-2 sm:py-3 rounded-full">June 1st, 2025</span>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-2xl mx-auto px-4 sm:px-8">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-xl mx-auto px-4 mb-4">
                 <NeonButton 
                   href="https://tally.so/r/w4XOem" 
                   color="ultraviolet" 
-                  className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4 sm:px-6"
+                  className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4"
                 >
                   JOIN THE SPRINT 🏃‍♂️
                 </NeonButton>
                 <NeonButton 
                   to="/startup-sprint" 
                   color="magenta" 
-                  className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4 sm:px-6"
+                  className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4"
                 >
                   LEARN MORE 📚
                 </NeonButton>
