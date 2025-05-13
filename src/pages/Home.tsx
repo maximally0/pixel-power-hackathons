@@ -22,7 +22,7 @@ const Home = () => {
               </div>
               <div className="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-md mx-auto px-2">
                 <NeonButton 
-                  href="https://tally.so/r/w4XOem" 
+                  href="https://tally.so/r/wMgZkg" 
                   color="ultraviolet" 
                   className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4"
                 >
