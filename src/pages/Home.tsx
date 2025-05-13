@@ -10,17 +10,17 @@ const Home = () => {
       <section className="py-8 sm:py-16 px-2 sm:px-4">
         <div className="container mx-auto">
           <NeonCard color="ultraviolet" className="animate-pulse">
-            <div className="flex flex-col items-center gap-4 sm:gap-6 p-4 sm:p-8">
-              <div className="text-center w-full">
+            <div className="flex flex-col items-center gap-4 sm:gap-6 p-6 sm:p-12">
+              <div className="text-center w-full max-w-4xl mx-auto">
                 <h2 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold neon-text-ultraviolet mb-3 sm:mb-4">🚀 24-HOUR STARTUP SPRINT</h2>
-                <p className="text-gray-300 mb-4 sm:mb-6 text-base sm:text-xl max-w-3xl mx-auto px-2">Build and launch a real startup in 24 hours! Open to all teens.</p>
+                <p className="text-gray-300 mb-4 sm:mb-6 text-base sm:text-xl max-w-3xl mx-auto">Build and launch a real startup in 24 hours! Open to all teens.</p>
                 <div className="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-lg text-gray-300 mb-6 sm:mb-8">
                   <span className="bg-purple-900/30 px-4 sm:px-6 py-2 sm:py-3 rounded-full">Team of 1-4</span>
                   <span className="bg-purple-900/30 px-4 sm:px-6 py-2 sm:py-3 rounded-full">AI + No-Code Tools</span>
                   <span className="bg-purple-900/30 px-4 sm:px-6 py-2 sm:py-3 rounded-full">June 1st, 2025</span>
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-2xl mx-auto">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-2xl mx-auto">
                 <NeonButton 
                   href="https://tally.so/r/w4XOem" 
                   color="ultraviolet" 
