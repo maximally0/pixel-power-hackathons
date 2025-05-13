@@ -7,20 +7,24 @@ const Home = () => {
   return (
     <div>
       {/* 24-Hour Challenge Banner */}
-      <section className="py-8 px-4">
+      <section className="py-4 sm:py-8 px-2 sm:px-4">
         <div className="container mx-auto">
           <NeonCard color="ultraviolet" className="animate-pulse">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-4">
-              <div className="text-left">
-                <h2 className="text-2xl md:text-3xl font-bold neon-text-ultraviolet mb-2">🚀 24-Hour Startup Sprint</h2>
-                <p className="text-gray-300 mb-4">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
-                <div className="flex flex-wrap gap-4 text-sm text-gray-300">
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">Team of 2-4</span>
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">AI + No-Code Tools</span>
-                  <span className="bg-purple-900/30 px-3 py-1 rounded-full">June 1st, 2025</span>
+            <div className="flex flex-col items-center sm:items-stretch gap-4 p-3 sm:p-4">
+              <div className="text-center sm:text-left w-full">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold neon-text-ultraviolet mb-2">🚀 24-Hour Startup Sprint</h2>
+                <p className="text-gray-300 mb-3 text-sm sm:text-base">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
+                <div className="flex flex-wrap justify-center sm:justify-start gap-2 text-xs sm:text-sm text-gray-300">
+                  <span className="bg-purple-900/30 px-2 py-1 rounded-full">Team of 2-4</span>
+                  <span className="bg-purple-900/30 px-2 py-1 rounded-full">AI + No-Code Tools</span>
+                  <span className="bg-purple-900/30 px-2 py-1 rounded-full">June 1st, 2025</span>
                 </div>
               </div>
-              <NeonButton to="/startup-sprint" color="ultraviolet" className="whitespace-nowrap">
+              <NeonButton 
+                to="/startup-sprint" 
+                color="ultraviolet" 
+                className="w-full sm:w-auto text-center whitespace-nowrap py-2 px-4"
+              >
                 Join the Sprint 🏃‍♂️
               </NeonButton>
             </div>
@@ -29,12 +33,12 @@ const Home = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col items-center justify-center text-center px-4">
-        <NeonCard color="magenta" className="max-w-4xl w-full py-12 px-8">
-          <h1 className="text-xl md:text-3xl lg:text-4xl font-bold mb-6 neon-text animate-flicker px-4">
+      <section className="min-h-[80vh] sm:h-screen flex flex-col items-center justify-center text-center px-2 sm:px-4">
+        <NeonCard color="magenta" className="max-w-4xl w-full py-6 sm:py-12 px-4 sm:px-8">
+          <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 neon-text animate-flicker px-2 sm:px-4">
             ENTER THE GRID: LAUNCH WHAT'S POSSIBLE
           </h1>
-          <p className="text-sm md:text-base lg:text-lg mb-12 max-w-3xl mx-auto floating px-4">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-8 sm:mb-12 max-w-3xl mx-auto floating px-2 sm:px-4">
             Maximally is where student entrepreneurs go from scrolling reels to building real businesses.
             We run online startup hackathons for teens — and help schools, clubs, and companies host their own.
             It's bold. It's fast. It's the runway to your first real startup.
