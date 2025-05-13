@@ -13,7 +13,7 @@ const Home = () => {
             <div className="flex flex-col items-center sm:items-stretch gap-4 p-3 sm:p-4">
               <div className="text-center sm:text-left w-full">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-bold neon-text-ultraviolet mb-2">🚀 24-Hour Startup Sprint</h2>
-                <p className="text-gray-300 mb-3 text-sm sm:text-base">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
+                <p className="text-gray-300 mb-3 text-sm sm:text-base max-w-prose mx-auto">Build and launch a real startup in 24 hours! Open to teens ages 13-19.</p>
                 <div className="flex flex-wrap justify-center sm:justify-start gap-2 text-xs sm:text-sm text-gray-300">
                   <span className="bg-purple-900/30 px-2 py-1 rounded-full">Team of 2-4</span>
                   <span className="bg-purple-900/30 px-2 py-1 rounded-full">AI + No-Code Tools</span>
@@ -38,7 +38,7 @@ const Home = () => {
           <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6 neon-text animate-flicker px-2 sm:px-4">
             ENTER THE GRID: LAUNCH WHAT'S POSSIBLE
           </h1>
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-8 sm:mb-12 max-w-3xl mx-auto floating px-2 sm:px-4">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg mb-8 sm:mb-12 max-w-2xl mx-auto floating px-2 sm:px-4">
             Maximally is where student entrepreneurs go from scrolling reels to building real businesses.
             We run online startup hackathons for teens — and help schools, clubs, and companies host their own.
             It's bold. It's fast. It's the runway to your first real startup.

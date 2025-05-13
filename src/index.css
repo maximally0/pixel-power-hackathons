@@ -39,6 +39,17 @@
 
 .text-container {
   @apply px-4 mx-auto max-w-full overflow-hidden text-ellipsis;
+  max-width: calc(100% - 2rem);
+}
+
+.neon-card {
+  @apply p-4 sm:p-6;
+  max-width: 100%;
+}
+
+.neon-card p {
+  @apply max-w-prose mx-auto;
+  word-wrap: break-word;
 }
 
 @media (max-width: 640px) {
