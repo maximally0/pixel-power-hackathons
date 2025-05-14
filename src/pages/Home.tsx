@@ -6,40 +6,7 @@ import NeonCard from '@/components/ui/NeonCard';
 const Home = () => {
   return (
     <div>
-      {/* 24-Hour Challenge Banner */}
-      <section className="py-8 sm:py-16 px-2 sm:px-4">
-        <div className="container mx-auto">
-          <NeonCard color="ultraviolet" className="animate-pulse">
-            <div className="flex flex-col items-center gap-4 sm:gap-6 p-4 sm:p-8">
-              <div className="text-center w-full max-w-3xl mx-auto">
-                <h2 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold neon-text-ultraviolet mb-3">🚀 24-HOUR STARTUP SPRINT</h2>
-                <p className="text-gray-300 mb-4 text-sm sm:text-base max-w-2xl mx-auto px-2">Build and launch a real startup in 24 hours! Open to all teens.</p>
-                <div className="flex flex-wrap justify-center gap-2 text-xs sm:text-sm text-gray-300 mb-6">
-                  <span className="bg-purple-900/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">Team of 1-4</span>
-                  <span className="bg-purple-900/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">AI + No-Code Tools</span>
-                  <span className="bg-purple-900/30 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full">June 1st, 2025</span>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center w-full max-w-md mx-auto px-2">
-                <NeonButton 
-                  href="https://tally.so/r/mZgxYe" 
-                  color="ultraviolet" 
-                  className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4"
-                >
-                  JOIN THE SPRINT 🏃‍♂️
-                </NeonButton>
-                <NeonButton 
-                  to="/startup-sprint" 
-                  color="magenta" 
-                  className="text-base sm:text-lg text-center whitespace-nowrap py-2 px-4"
-                >
-                  LEARN MORE 📚
-                </NeonButton>
-              </div>
-            </div>
-          </NeonCard>
-        </div>
-      </section>
+      
 
       {/* Hero Section */}
       <section className="min-h-[80vh] sm:h-screen flex flex-col items-center justify-center text-center px-2 sm:px-4">
